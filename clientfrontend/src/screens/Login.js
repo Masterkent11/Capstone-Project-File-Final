@@ -5,6 +5,9 @@ import Message from "../components/LoadingError/Error";
 import Loading from "../components/LoadingError/Loading";
 import Header from "./../components/Header";
 import { login } from "./../Redux/Actions/userActions";
+import OAuth2Login from 'react-simple-oauth2-login';
+
+
 
 const Login = ({ location, history }) => {
   window.scrollTo(0, 0);
@@ -28,6 +31,19 @@ const Login = ({ location, history }) => {
     dispatch(login(email, password));
   };
 
+
+
+    const onSuccess = async (res)=>{
+      const accessToken = res.access_token
+      const result = await fetch(`http://graph.facebook.com/me?field=id,name,picture&access_token=${accessToken}`)
+      const profile = await result.json();
+      console.log(profile)
+    }
+    const onFailure = (res)=>{
+      console.log(res);
+    }
+
+
   return (
     <>
       <Header />
@@ -49,6 +65,7 @@ const Login = ({ location, history }) => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            autoComplete="off"
           />
           <button type="submit">Login</button>
           <p>
@@ -58,7 +75,18 @@ const Login = ({ location, history }) => {
               Create Account
             </Link>
           </p>
+    
+
+          <OAuth2Login
+            buttonText=" Login with Facebook"
+            authorizationUrl="https://www.facebook.com/dialog/oauth"
+            responseType="token"
+            clientId="1230316541028928"
+            redirectUri="http://localhost:3001"
+            onSuccess={onSuccess}
+            onFailure={onFailure}/>
         </form>
+       
       </div>
     </>
   );
