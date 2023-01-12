@@ -1,7 +1,22 @@
 import React from "react";
+import Logo from './video/Logo.png'
+
+export function FooterTop() {
+  return(
+    <div className="text-center p-5" style={{backgroundColor:"#003F62"}}>
+      <img  style={{width:'30vmin'}} src={Logo} alt='aa'/>
+      <p className="d-flex justify-content-center gap-1 text-light">
+        <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
+        <span>Copyright XploRear 2023</span>
+      </p>
+    </div>
+  )
+}
 
 const Footer = () => {
   return (
+    <div>
+    <FooterTop/>
     <div className="footer">
       <div className="justify-content-center d-flex">
         <div className="card-name">
@@ -35,6 +50,7 @@ const Footer = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };
