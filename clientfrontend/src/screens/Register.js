@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+import ContactInfo from "../components/homeComponents/ContactInfo";
 import Message from "../components/LoadingError/Error";
 import Loading from "../components/LoadingError/Loading";
 import { register } from "../Redux/Actions/userActions";
 import Header from "./../components/Header";
+
 
 const Register = ({ location, history }) => {
   window.scrollTo(0, 0);
@@ -67,6 +70,9 @@ const Register = ({ location, history }) => {
           </p>
         </form>
       </div>
+
+      <ContactInfo />
+      <Footer />
     </>
   );
 };

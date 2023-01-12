@@ -11,6 +11,8 @@ import {
 import Loading from "../components/LoadingError/Loading";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../Redux/Constants/ProductConstants";
 import moment from "moment";
+import ContactInfo from "../components/homeComponents/ContactInfo";
+import Footer from "./../components/Footer";
 
 const SingleProduct = ({ history, match }) => {
   const [qty, setQty] = useState(1);
@@ -80,7 +82,7 @@ const SingleProduct = ({ history, match }) => {
                   <div className="product-count col-lg-7 ">
                     <div className="flex-box d-flex justify-content-between align-items-center">
                       <h6>Price</h6>
-                      <span>${product.price}</span>
+                      <span>₱{product.price}</span>
                     </div>
                     <div className="flex-box d-flex justify-content-between align-items-center">
                       <h6>Status</h6>
@@ -187,7 +189,7 @@ const SingleProduct = ({ history, match }) => {
                     <div className="my-3">
                       <button
                         disabled={loadingCreateReview}
-                        className="col-12 bg-black border-0 p-3 rounded text-white"
+                        className="col-12 border-0 p-3 rounded text-white w-50"
                       >
                         SUBMIT
                       </button>
@@ -209,6 +211,8 @@ const SingleProduct = ({ history, match }) => {
           </>
         )}
       </div>
+      <ContactInfo />
+      <Footer />
     </>
   );
 };
