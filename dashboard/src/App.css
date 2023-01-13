@@ -515,6 +515,15 @@ a.itemside:hover .title {
   border-color: #EDA415;
 
 }
+.badge2{
+  background-color: #EDA415; ;
+}
+.badge3{
+  background-color: #003F62;
+}
+.badge4{
+  color: #003F62;
+}
 
 /* LARGE LIST STYLE PRODUCT ITEM */
 .card-product-list {
