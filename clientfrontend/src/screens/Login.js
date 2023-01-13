@@ -31,18 +31,6 @@ const Login = ({ location, history }) => {
   };
 
 
-
-    const onSuccess = async (res)=>{
-      const accessToken = res.access_token
-      const result = await fetch(`http://graph.facebook.com/me?field=id,name,picture&access_token=${accessToken}`)
-      const profile = await result.json();
-      console.log(profile)
-    }
-    const onFailure = (res)=>{
-      console.log(res);
-    }
-
-
   return (
     <>
       <Header />

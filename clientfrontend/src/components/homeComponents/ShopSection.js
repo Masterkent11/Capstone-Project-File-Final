@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { listProduct } from "../../Redux/Actions/ProductActions";
 import Loading from "../LoadingError/Loading";
 import Message from "../LoadingError/Error";
-
 const ShopSection = (props) => {
   const { keyword, pagenumber } = props;
   const dispatch = useDispatch();
@@ -19,6 +18,7 @@ const ShopSection = (props) => {
   }, [dispatch, keyword, pagenumber]);
   return (
     <>
+      
       <div className="container">
         <div className="section">
           <div className="row">
@@ -50,13 +50,16 @@ const ShopSection = (props) => {
                                 {product.name}
                               </Link>
                             </p>
+                            
 
                             <Rating
                               value={product.rating}
                               text={`${product.numReviews} reviews`}
                             />
-                            <h3>₱{product.price}</h3>
+                            <h3>₱{Intl.NumberFormat({ style: 'currency', currency: 'PHP' }).format(product.price)}</h3>
+                        
                           </div>
+                          
                         </div>
                       </div>
                     ))}
