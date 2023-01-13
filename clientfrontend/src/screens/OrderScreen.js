@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "./../components/Header";
 import { PayPalButton } from "react-paypal-button-v2";
@@ -11,6 +11,7 @@ import axios from "axios";
 import { ORDER_PAY_RESET } from "../Redux/Constants/OrderConstants";
 import ContactInfo from "../components/homeComponents/ContactInfo";
 import Footer from "./../components/Footer";
+import emailjs from '@emailjs/browser';
 
 const OrderScreen = ({ match }) => {
   window.scrollTo(0, 0);
@@ -60,6 +61,21 @@ const OrderScreen = ({ match }) => {
   const successPaymentHandler = (paymentResult) => {
     dispatch(payOrder(orderId, paymentResult));
   };
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    
+    if(successPaymentHandler === true){
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+    }
+    
 
   return (
     <>
@@ -227,6 +243,8 @@ const OrderScreen = ({ match }) => {
                       <PayPalButton
                         amount={order.totalPrice}
                         onSuccess={successPaymentHandler}
+                        value="Send"
+                        onSubmit={sendEmail}
                       />
                     )}
                   </div>
