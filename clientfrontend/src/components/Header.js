@@ -3,6 +3,11 @@ import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../Redux/Actions/userActions";
 
+
+
+
+
+
 const Header = () => {
   const [keyword, setKeyword] = useState();
   const dispatch = useDispatch();
@@ -26,6 +31,7 @@ const Header = () => {
     }
   };
   return (
+    
     <div>
       {/* Top Header */}
       <div className="Announcement ">
@@ -64,7 +70,7 @@ const Header = () => {
               <div className="row ">
                 <div className="col-6 d-flex align-items-center">
                   <Link className="navbar-brand" to="/">
-                    <img alt="logo" src="/images/logo.png" />
+                    <img alt="logo" src="/images/Logo1.png" />
                   </Link>
                 </div>
                 <div className="col-6 d-flex align-items-center justify-content-end Login-Register">
@@ -143,7 +149,7 @@ const Header = () => {
             <div className="row">
               <div className="col-md-3 col-4 d-flex align-items-center">
                 <Link className="navbar-brand" to="/">
-                  <img alt="logo" src="/images/logo.png" />
+                  <img alt="logo" src="/images/Logo1.png" style={{width:"12vmin"}}/>
                 </Link>
               </div>
               <div className="col-md-6 col-8 d-flex align-items-center">
@@ -202,7 +208,15 @@ const Header = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
 export default Header;
+
+
+
+
+
+
+
