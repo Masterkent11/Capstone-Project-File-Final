@@ -65,9 +65,9 @@ const OrderScreen = ({ match }) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // Updated
+    // new Updated
     if(successPaymentHandler === true){
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      emailjs.sendForm('service_4iok5t8', 'template_1n866ap', form.current, 'b1gcexkuJgYk6qZZ0')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
