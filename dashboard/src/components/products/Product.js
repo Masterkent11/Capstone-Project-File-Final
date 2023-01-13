@@ -25,17 +25,17 @@ const Product = (props) => {
               {product.name}
             </Link>
             <div className="price mb-2">₱{Intl.NumberFormat({ style: 'currency', currency: 'PHP' }).format(product.price)}</div>
-            <div className="row">
+            <div className="row d-flex justify-content-evenly">
               <Link
                 to={`/product/${product._id}/edit`}
-                className="btn btn-sm btn-outline-success p-2 pb-3 col-md-6"
+                className="btn btn-sm btn-outline icontext-2 p-2 pb-3 col-md-5"
               >
                 <i className="fas fa-pen"></i>
               </Link>
               <Link
                 to="#"
                 onClick={() => deletehandler(product._id)}
-                className="btn btn-sm btn-outline-danger p-2 pb-3 col-md-6"
+                className="btn btn-sm btn-outline-danger p-2 pb-3 col-md-5"
               >
                 <i className="fas fa-trash-alt"></i>
               </Link>
