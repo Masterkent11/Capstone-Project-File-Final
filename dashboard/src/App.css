@@ -507,6 +507,14 @@ a.itemside:hover .title {
 .card-product-grid:hover {
   border-color: #adb5bd;
 }
+.icontext i{
+  color: #EDA415;
+}
+.icontext-2{
+  color: #EDA415;
+  border-color: #EDA415;
+
+}
 
 /* LARGE LIST STYLE PRODUCT ITEM */
 .card-product-list {
