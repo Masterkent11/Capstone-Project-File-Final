@@ -35,7 +35,7 @@ const Header = () => {
               <p>+255 768 356 890</p>
               <p>info@zpunet.com</p>
             </div>
-            <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
+            <div className="social-header col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
               <Link to="">
                 <i className="fab fa-facebook-f"></i>
               </Link>
@@ -123,7 +123,7 @@ const Header = () => {
                 </div>
                 <div className="col-12 d-flex align-items-center">
                   <form onSubmit={submitHandler} className="input-group">
-                    <input
+                    <input id="search-1"
                       type="search"
                       className="form-control rounded search"
                       placeholder="Search"
@@ -193,7 +193,7 @@ const Header = () => {
                 )}
 
                 <Link to="/cart">
-                  <i className="fas fa-shopping-bag"></i>
+                  <i className="fas fa-shopping-bag bag-1 "></i>
                   <span className="badge">{cartItems.length}</span>
                 </Link>
               </div>

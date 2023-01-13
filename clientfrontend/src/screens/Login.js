@@ -5,9 +5,8 @@ import Message from "../components/LoadingError/Error";
 import Loading from "../components/LoadingError/Loading";
 import Header from "./../components/Header";
 import { login } from "./../Redux/Actions/userActions";
-import OAuth2Login from 'react-simple-oauth2-login';
-
-
+import ContactInfo from "./../components/homeComponents/ContactInfo";
+import Footer from "../components/Footer";
 
 const Login = ({ location, history }) => {
   window.scrollTo(0, 0);
@@ -59,6 +58,7 @@ const Login = ({ location, history }) => {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className="search__email"
           />
           <input
             type="password"
@@ -66,8 +66,9 @@ const Login = ({ location, history }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             autoComplete="off"
+            className="search__email"
           />
-          <button type="submit">Login</button>
+          <button type="submit" id="submit__button">Login</button>
           <p>
             <Link
               to={redirect ? `/register?redirect=${redirect}` : "/register"}
@@ -76,7 +77,7 @@ const Login = ({ location, history }) => {
             </Link>
           </p>
     
-
+{/* 
           <OAuth2Login
             buttonText=" Login with Facebook"
             authorizationUrl="https://www.facebook.com/dialog/oauth"
@@ -84,10 +85,13 @@ const Login = ({ location, history }) => {
             clientId="1230316541028928"
             redirectUri="http://localhost:3001"
             onSuccess={onSuccess}
-            onFailure={onFailure}/>
+            onFailure={onFailure}/> */}
         </form>
        
       </div>
+
+      <ContactInfo />
+      <Footer />
     </>
   );
 };

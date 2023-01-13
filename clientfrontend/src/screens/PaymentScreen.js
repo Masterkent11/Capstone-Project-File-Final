@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import ContactInfo from "../components/homeComponents/ContactInfo";
 import { savePaymentMethod } from "../Redux/Actions/cartActions";
 import Header from "./../components/Header";
+import Footer from "./../components/Footer";
 
 const PaymentScreen = ({ history }) => {
   window.scrollTo(0, 0);
@@ -46,6 +48,8 @@ const PaymentScreen = ({ history }) => {
           <button type="submit">Continue</button>
         </form>
       </div>
+      <ContactInfo />
+      <Footer />
     </>
   );
 };

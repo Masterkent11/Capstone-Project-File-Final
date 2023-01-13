@@ -19,6 +19,7 @@ const AddProductMain = () => {
   const [price, setPrice] = useState(0);
   const [image, setImage] = useState("");
   const [countInStock, setCountInStock] = useState(0);
+  const [countSize, setCountSize] = useState(0);
   const [description, setDescription] = useState("");
 
   const dispatch = useDispatch();
@@ -33,6 +34,7 @@ const AddProductMain = () => {
       setName("");
       setDescription("");
       setCountInStock(0);
+      setCountSize(0);
       setImage("");
       setPrice(0);
     }
@@ -40,7 +42,7 @@ const AddProductMain = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(createProduct(name, price, description, image, countInStock));
+    dispatch(createProduct(name, price, description, image, countInStock, countSize));
   };
 
   return (
@@ -108,6 +110,22 @@ const AddProductMain = () => {
                       onChange={(e) => setCountInStock(e.target.value)}
                     />
                   </div>
+
+                  <div className="mb-4">
+                    <label htmlFor="product_price" className="form-label">
+                      Size
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="Type here"
+                      className="form-control"
+                      id="product_price"
+                      required
+                      value={countSize}
+                      onChange={(e) => setCountSize(e.target.value)}
+                    />
+                  </div>
+
                   <div className="mb-4">
                     <label className="form-label">Description</label>
                     <textarea

@@ -9,7 +9,7 @@ const productRoute = express.Router();
 productRoute.get(
   "/",
   asyncHandler(async (req, res) => {
-    const pageSize = 12;
+    const pageSize = 4;
     const page = Number(req.query.pageNumber) || 1;
     const keyword = req.query.keyword
       ? {
@@ -114,7 +114,7 @@ productRoute.post(
   protect,
   admin,
   asyncHandler(async (req, res) => {
-    const { name, price, description, image, countInStock } = req.body;
+    const { name, price, description, image, countInStock, countSize } = req.body;
     const productExist = await Product.findOne({ name });
     if (productExist) {
       res.status(400);
@@ -126,6 +126,7 @@ productRoute.post(
         description,
         image,
         countInStock,
+        countSize,
         user: req.user._id,
       });
       if (product) {
@@ -145,7 +146,7 @@ productRoute.put(
   protect,
   admin,
   asyncHandler(async (req, res) => {
-    const { name, price, description, image, countInStock } = req.body;
+    const { name, price, description, image, countInStock, countSize } = req.body;
     const product = await Product.findById(req.params.id);
     if (product) {
       product.name = name || product.name;
@@ -153,6 +154,7 @@ productRoute.put(
       product.description = description || product.description;
       product.image = image || product.image;
       product.countInStock = countInStock || product.countInStock;
+      product.countSize = countSize || product.countSize;
 
       const updatedProduct = await product.save();
       res.json(updatedProduct);

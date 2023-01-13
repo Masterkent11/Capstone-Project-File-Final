@@ -9,6 +9,8 @@ import Message from "./../components/LoadingError/Error";
 import moment from "moment";
 import axios from "axios";
 import { ORDER_PAY_RESET } from "../Redux/Constants/OrderConstants";
+import ContactInfo from "../components/homeComponents/ContactInfo";
+import Footer from "./../components/Footer";
 
 const OrderScreen = ({ match }) => {
   window.scrollTo(0, 0);
@@ -111,7 +113,7 @@ const OrderScreen = ({ match }) => {
                         </p>
                       </div>
                     ) : (
-                      <div className="bg-danger p-2 col-12">
+                      <div className="not-paid p-2 col-12">
                         <p className="text-white text-center text-sm-start">
                           Not Paid
                         </p>
@@ -144,7 +146,7 @@ const OrderScreen = ({ match }) => {
                         </p>
                       </div>
                     ) : (
-                      <div className="bg-danger p-2 col-12">
+                      <div className="not-paid p-2 col-12">
                         <p className="text-white text-center text-sm-start">
                           Not Delivered
                         </p>
@@ -179,7 +181,7 @@ const OrderScreen = ({ match }) => {
                         </div>
                         <div className="mt-3 mt-md-0 col-md-2 col-6 align-items-end  d-flex flex-column justify-content-center ">
                           <h4>SUBTOTAL</h4>
-                          <h6>${item.qty * item.price}</h6>
+                          <h6>₱{item.qty * item.price}</h6>
                         </div>
                       </div>
                     ))}
@@ -194,25 +196,25 @@ const OrderScreen = ({ match }) => {
                       <td>
                         <strong>Products</strong>
                       </td>
-                      <td>${order.itemsPrice}</td>
+                      <td>₱{order.itemsPrice}</td>
                     </tr>
                     <tr>
                       <td>
                         <strong>Shipping</strong>
                       </td>
-                      <td>${order.shippingPrice}</td>
+                      <td>₱{order.shippingPrice}</td>
                     </tr>
                     <tr>
                       <td>
                         <strong>Tax</strong>
                       </td>
-                      <td>${order.taxPrice}</td>
+                      <td>₱{order.taxPrice}</td>
                     </tr>
                     <tr>
                       <td>
                         <strong>Total</strong>
                       </td>
-                      <td>${order.totalPrice}</td>
+                      <td>₱{order.totalPrice}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -234,6 +236,8 @@ const OrderScreen = ({ match }) => {
           </>
         )}
       </div>
+      <ContactInfo />
+      <Footer />
     </>
   );
 };
