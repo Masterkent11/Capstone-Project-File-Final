@@ -1,7 +1,7 @@
 import React from "react";
 import Video1 from "../video/Video1.mp4"
 
-// Update!
+// New Update
 
 
 
