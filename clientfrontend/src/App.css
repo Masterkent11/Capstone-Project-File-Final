@@ -223,15 +223,15 @@ textarea:focus {
 /* END OF SHOP */
 
 /* NEWSLATTER */
-.subscribe-section {
+/* .subscribe-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.226)),
     url("https://sasshoes-com.s3.us-west-2.amazonaws.com/img/banner-uplift-21.jpg")
       no-repeat scroll center / cover;
   padding: 100px 0 100px;
-}
+} */
 .subscribe-head h2 {
   color: #fff;
-  font-size: 30px;
+  font-size: 6vmin;
   letter-spacing: 0;
   line-height: 30px;
   margin: 0 0 13px;
@@ -239,7 +239,7 @@ textarea:focus {
 }
 .subscribe-head p {
   color: #fff;
-  font-size: 18px;
+  font-size: 3vmin;
   line-height: 22px;
   margin: 0 0 39px;
 }
@@ -248,26 +248,38 @@ textarea:focus {
 }
 .form-section input[type="email"] {
   border: 0 none;
-  border-radius: 12px;
   color: #9b9b9b;
-  font-size: 16px;
+  font-size: 2.7vmin;
   font-style: normal;
-  height: 50px;
+  height: 7.4vmin;
   letter-spacing: 0;
   text-align: center;
-  width: 460px;
+  width: 60vmin;  
 }
 .form-section input[type="submit"] {
-  background: orange;
+  background: #EDA415;
   border: 0 none;
-  border-radius: 12px;
   color: #fff;
-  height: 54px;
+  height: 7.4vmin;
   letter-spacing: 0;
-  margin-left: 10px;
-  padding: 0 58px;
+  padding: 0 3vmin;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 2.6vmin;
+  
+}
+
+#video_overlay{
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 /* CONTACT */
 .contactInfo {
