@@ -60,7 +60,6 @@ const ShopSection = (props) => {
                         
                           </div>
 
-                         
                         </div>
                       </div>
                     ))}

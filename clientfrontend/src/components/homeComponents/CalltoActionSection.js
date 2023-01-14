@@ -46,7 +46,6 @@ const CalltoActionSection = () => {
       </div>
 
     </div>
-    </>
   );
 };
 
