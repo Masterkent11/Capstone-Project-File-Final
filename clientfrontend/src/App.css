@@ -56,13 +56,14 @@ textarea:focus {
 .Announcement .col-md-6 p {
   color: black;
   margin-right: 6rem;
-  font-size: 15px;
+  font-size: 2vmin;
 }
 .Announcement .col-12 a {
   color: white;
   margin-right: 2rem;
   font-size: 15px;
 }
+
 /* Header */
 .header {
   padding: 10px 0px 10px 0px;
@@ -172,19 +173,21 @@ textarea:focus {
   margin-left: 20px;
 }
 .shop {
-  margin-bottom: 50px;
+  margin-bottom: 8vmin;
 }
 .border-product {
-  padding: 10px;
+  padding: 2vmin;
   border: 1px solid #f3f3f3;
-  border-radius: 1rem;
+  border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  height: 420px;
-  margin-left: 1rem;
+  /* height: 420px; */
+  height: 60vmin;
+  margin-left: 5vmin;
   
 }
 .shopBack {
-  height: 250px;
+  /* 250px */
+  height: 37vmin;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -193,28 +196,32 @@ textarea:focus {
 }
 .shopBack img {
   width: 100%;
-  height: 250px;
-  object-fit: contain;
+  /* 250px */
+  height: 37vmin;
+  object-fit: cover;
 }
 .shoptext {
-  padding-top: 10px;
+  padding-top: 3vmin;
   
 }
 .shoptext p a {
   color: #252525;
-  font-weight: 900;
+  font-weight: bold;
+  font-size: 2.5vmin;
 }
 .shoptext h3 {
   color: #252525;
-  margin-top: 13px;
-  font-weight: bold;
-  font-size: 19px;
+  margin-top: 1vmin;
+  font-weight: normal;
+  font-size: 2.5vmin;
 }
 .rating {
-  margin: 5px 0;
+  margin: 0;
+  font-size: 2vmin;
+  color:#718093;
 }
 .rating i {
-  font-size: 12px;
+  font-size: 1.5vmin;
   color: #ebb450;
 }
 .rating span {
@@ -284,7 +291,7 @@ textarea:focus {
 
 /* CONTACT */
 .contactInfo {
-  padding: 70px 0;
+  padding: 10vmin 0;
 }
 .contact-Box,
 .box-info,
@@ -296,26 +303,26 @@ textarea:focus {
 .box-info {
   width: 80%;
   flex-direction: column;
-  padding: 40px 0;
-  box-shadow: 10px 10px 10px rgb(194, 194, 194);
+  padding: 6vmin 0;
+  box-shadow: 3px 2px 15px 3px rgba(151, 109, 0, 0.2);
   border-radius: 1rem;
 }
 .info-image {
-  width: 50px;
-  height: 50px;
+  width: 9vmin;
+  height: 9vmin;
   border: 2px solid orange;
   border-radius: 100px;
-  font-size: 20px;
+  font-size: 2.7vmin;
   color: orange;
 }
 .box-info h5 {
   font-weight: bold;
-  font-size: 19px;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  font-size: 2.8vmin;
+  margin-top: 3vmin;
+  margin-bottom: 1vmin;
 }
 .box-info p {
-  font-size: 16px;
+  font-size: 2.3vmin;
 }
 
 /* SINGLE PRODUCT */
@@ -870,10 +877,11 @@ padding: 8vmin;
 
 /* Pagination */
 .pagination .page-link {
-  padding: 10px 30px;
+  padding: 1vmin 4vmin;
   color: black;
+  font-size: 2.7vmin;
 }
 .page-item.active .page-link {
-  background-color: black;
-  border: 1px solid black;
+  background-color: #EDA415;
+  border: 1px solid #EDA415;
 }

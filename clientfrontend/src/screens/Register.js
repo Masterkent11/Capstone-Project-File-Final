@@ -81,9 +81,11 @@ const Register = ({ location, history }) => {
         {error && <Message variant="alert-danger">{error}</Message>}
         {loading && <Loading />}
 
+        <p className="mt-2" style={{fontSize:"7vmin", fontWeight:"900"}}>Create an Account</p>
+
         <form
-          className="RegisterForm col-md-8 col-lg-4 col-11 mt-4"
-          onSubmit={submitHandler} style={{backgroundColor:"#003F62"}}
+          className="RegisterForm col-md-8 col-lg-4 col-11 mt-3"
+          onSubmit={submitHandler} style={{backgroundColor:"#003F62", color:"#003F62"}}
         >
           <input
             type="text"

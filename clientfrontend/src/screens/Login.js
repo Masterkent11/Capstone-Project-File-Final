@@ -95,9 +95,12 @@ const Login = ({ location, history }) => {
 
       {/* Position relative */}
       
-      <div className="container-fluid d-flex flex-column justify-content-center align-items-center login-center justify-items-center top-0 d-md-none mt-5">
+      <div className="container-fluid d-flex flex-column justify-content-center align-items-center login-center justify-items-center top-0 d-md-none mt-3">
         {error && <Message variant="alert-danger">{error}</Message>}
         {loading && <Loading />}
+
+        <p className="mb-3" style={{fontSize:"7vmin", fontWeight:"900", color:"#003F62"}}>Login</p>
+
         <form
           className="Login3 col-md-8 col-lg-4 col-11"
           onSubmit={submitHandler}
