@@ -8,10 +8,14 @@ import { login } from "./../Redux/Actions/userActions";
 import ContactInfo from "./../components/homeComponents/ContactInfo";
 import Footer from "../components/Footer";
 
+import jwt_decode from "jwt-decode"
+
+
 const Login = ({ location, history }) => {
   window.scrollTo(0, 0);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  
 
   const dispatch = useDispatch();
   const redirect = location.search ? location.search.split("=")[1] : "/";
@@ -30,6 +34,23 @@ const Login = ({ location, history }) => {
     dispatch(login(email, password));
   };
 
+    // function handleCallbackResponse(response){
+    //   console.log("encoded JWT ID token" + response.credential);
+    //   var userObject = jwt_decode(response.credential);
+    //   console.log(userObject);
+
+    // }
+    // useEffect(() => {
+    //   /* global google */
+    //   google.accounts.id.initialize({
+    //     client_id: "1028814407207-gu8d0bcn6k4mitf26sfciu3g6dj5ft53.apps.googleusercontent.com",
+    //     callback: handleCallbackResponse,
+    //   })
+    //   google.accounts.id.renderButton(
+    //     document.getElementById("signInDiv"),
+    //     {theme: "outline",size: 'large'}
+    //   )
+    // }, []);
 
   return (
     <>
@@ -64,16 +85,7 @@ const Login = ({ location, history }) => {
               Create Account
             </Link>
           </p>
-    
-{/* 
-          <OAuth2Login
-            buttonText=" Login with Facebook"
-            authorizationUrl="https://www.facebook.com/dialog/oauth"
-            responseType="token"
-            clientId="1230316541028928"
-            redirectUri="http://localhost:3001"
-            onSuccess={onSuccess}
-            onFailure={onFailure}/> */}
+          {/* <div id="signInDiv">Sign In</div> */}
         </form>
        
       </div>

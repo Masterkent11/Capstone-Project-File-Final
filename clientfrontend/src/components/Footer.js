@@ -8,7 +8,7 @@ export function FooterTop() {
     <div className="text-center p-5" style={{backgroundColor:"#003F62"}}>
       <Link to="/"><img  style={{width:'25vmin'}} src={Logo} alt='aa'/></Link>
       <p className="d-flex justify-content-center gap-1 text-light">
-        <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
+        <span><i className="fa fa-copyright" aria-hidden="true"></i></span>
         <span>Copyright XploRear 2023</span>
       </p>
     </div>
