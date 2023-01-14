@@ -35,27 +35,27 @@ const Header = () => {
     <div>
       {/* Top Header */}
       <div className="Announcement ">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center display-none">
-              <p>+255 768 356 890</p>
-              <p>info@zpunet.com</p>
+              <p>(02) 8808-5901</p>
+              <p>xplorear@gmail.com</p>
             </div>
             <div className="social-header col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
               <Link to="">
-                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"  style={{fontSize:"3.5vmin"}}></i>
               </Link>
               <Link to="">
-                <i className="fab fa-instagram"></i>
+                <i className="fab fa-instagram" style={{fontSize:"3.5vmin"}}></i>
               </Link>
               <Link to="">
-                <i className="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in"  style={{fontSize:"3.5vmin"}}></i>
               </Link>
               <Link to="">
-                <i className="fab fa-youtube"></i>
+                <i className="fab fa-youtube"  style={{fontSize:"3.5vmin"}}></i>
               </Link>
               <Link to="">
-                <i className="fab fa-pinterest-p"></i>
+                <i className="fab fa-pinterest-p"  style={{fontSize:"3.5vmin"}}></i>
               </Link>
             </div>
           </div>
@@ -128,14 +128,14 @@ const Header = () => {
                   </Link>
                 </div>
                 <div className="col-12 d-flex align-items-center">
-                  <form onSubmit={submitHandler} className="input-group">
-                    <input id="search-1"
+                  <form onSubmit={submitHandler} className="input-group mb-4">
+                    <input id="search-1" style={{fontSize:"2.7vmin"}}
                       type="search"
                       className="form-control rounded search"
                       placeholder="Search"
                       onChange={(e) => setKeyword(e.target.value)}
                     />
-                    <button type="submit" className="search-button">
+                    <button type="submit" className="search-button" style={{fontSize:"2.7vmin"}}>
                       search
                     </button>
                   </form>

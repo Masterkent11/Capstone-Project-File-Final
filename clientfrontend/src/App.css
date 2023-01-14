@@ -56,13 +56,14 @@ textarea:focus {
 .Announcement .col-md-6 p {
   color: black;
   margin-right: 6rem;
-  font-size: 15px;
+  font-size: 2vmin;
 }
 .Announcement .col-12 a {
   color: white;
   margin-right: 2rem;
   font-size: 15px;
 }
+
 /* Header */
 .header {
   padding: 10px 0px 10px 0px;
@@ -172,19 +173,21 @@ textarea:focus {
   margin-left: 20px;
 }
 .shop {
-  margin-bottom: 50px;
+  margin-bottom: 8vmin;
 }
 .border-product {
-  padding: 10px;
+  padding: 2vmin;
   border: 1px solid #f3f3f3;
-  border-radius: 1rem;
+  border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  height: 420px;
-  margin-left: 1rem;
+  /* height: 420px; */
+  height: 60vmin;
+  margin-left: 5vmin;
   
 }
 .shopBack {
-  height: 250px;
+  /* 250px */
+  height: 37vmin;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -193,28 +196,32 @@ textarea:focus {
 }
 .shopBack img {
   width: 100%;
-  height: 250px;
-  object-fit: contain;
+  /* 250px */
+  height: 37vmin;
+  object-fit: cover;
 }
 .shoptext {
-  padding-top: 10px;
+  padding-top: 3vmin;
   
 }
 .shoptext p a {
   color: #252525;
-  font-weight: 900;
+  font-weight: bold;
+  font-size: 2.5vmin;
 }
 .shoptext h3 {
   color: #252525;
-  margin-top: 13px;
-  font-weight: bold;
-  font-size: 19px;
+  margin-top: 1vmin;
+  font-weight: normal;
+  font-size: 2.5vmin;
 }
 .rating {
-  margin: 5px 0;
+  margin: 0;
+  font-size: 2vmin;
+  color:#718093;
 }
 .rating i {
-  font-size: 12px;
+  font-size: 1.5vmin;
   color: #ebb450;
 }
 .rating span {
@@ -233,15 +240,15 @@ textarea:focus {
   color: #fff;
   font-size: 6vmin;
   letter-spacing: 0;
-  line-height: 30px;
-  margin: 0 0 13px;
+  line-height: 5vmin;
+  margin: 0 0 2vmin;
   text-transform: uppercase;
 }
 .subscribe-head p {
   color: #fff;
   font-size: 3vmin;
-  line-height: 22px;
-  margin: 0 0 39px;
+  line-height: 1vmin;
+  margin: 0 0 8vmin;
 }
 .subscribe-head {
   text-align: center;
@@ -251,7 +258,7 @@ textarea:focus {
   color: #9b9b9b;
   font-size: 2.7vmin;
   font-style: normal;
-  height: 7.4vmin;
+  height: 6vmin;
   letter-spacing: 0;
   text-align: center;
   width: 60vmin;  
@@ -260,7 +267,7 @@ textarea:focus {
   background: #EDA415;
   border: 0 none;
   color: #fff;
-  height: 7.4vmin;
+  height: 6vmin;
   letter-spacing: 0;
   padding: 0 3vmin;
   text-transform: uppercase;
@@ -274,16 +281,17 @@ textarea:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .3);
+  /* background: rgba(0, 0, 0, .3); */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 /* CONTACT */
 .contactInfo {
-  padding: 70px 0;
+  padding: 10vmin 0;
 }
 .contact-Box,
 .box-info,
@@ -295,26 +303,26 @@ textarea:focus {
 .box-info {
   width: 80%;
   flex-direction: column;
-  padding: 40px 0;
-  box-shadow: 10px 10px 10px rgb(194, 194, 194);
+  padding: 6vmin 0;
+  box-shadow: 3px 2px 15px 3px rgba(151, 109, 0, 0.2);
   border-radius: 1rem;
 }
 .info-image {
-  width: 50px;
-  height: 50px;
+  width: 9vmin;
+  height: 9vmin;
   border: 2px solid #EDA415;
   border-radius: 100px;
-  font-size: 20px;
+  font-size: 2.7vmin;
   color: #EDA415;
 }
 .box-info h5 {
   font-weight: bold;
-  font-size: 19px;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  font-size: 2.8vmin;
+  margin-top: 3vmin;
+  margin-bottom: 1vmin;
 }
 .box-info p {
-  font-size: 16px;
+  font-size: 2.3vmin;
 }
 
 /* SINGLE PRODUCT */
@@ -403,13 +411,13 @@ textarea:focus {
 }
 
 /* LOGIN */
-.login-center {
+/* .login-center {
   padding: 50px 0;
 
 }
 .Login,
 .Login2 {
-  /* background: #003F62; */
+
   border-radius: 5px;
   position: relative;
   padding: 35px 30px 30px;
@@ -473,6 +481,140 @@ textarea:focus {
 }
 .Login p a {
   color: white;
+} */
+
+
+
+/* LOGIN and REGISTRATION FORM */
+.LoginForm, .Register {
+  width:100%;
+  height: 100%;
+  background: rgba( 0, 0, 0, 0.2 );
+}
+.login-center {
+padding: 8vmin;
+
+}
+.Login,
+.Login2 {
+  border-radius: 5px;
+  padding: 5vmin 5vmin 5vmin;
+  background: rgba( 0, 63, 98, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  text-align: center;
+}
+.RegisterForm{
+  border-radius: 5px;
+  padding: 4vmin 4vmin 4vmin;
+  background: rgba( 0, 63, 98, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  text-align: center;
+}
+.Login3{
+  border-radius: 5px;
+  padding: 5vmin 5vmin 5vmin;
+  background: #003F62;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  text-align: center;
+}
+.Login input,
+.Login3 input {
+  width: 95%;
+  padding: 3vmin 3vmin;
+  margin-top: 2.5vmin;
+  border: 2px solid #e4e4e4;
+  border-radius: 10vmin;
+  color: white;
+  font-size: 2.7vmin;
+}
+.RegisterForm input {
+  width: 90%;
+  height: 3vmin;
+  padding: 4vmin 3vmin;
+  margin-top: 2.5vmin;
+  border: 2px solid #e4e4e4;
+  border-radius: 10vmin;
+  color: black;
+  font-size: 2.7vmin;
+}
+.search__email{
+  height: 2rem;
+  border-radius: 2rem!important;
+  background-color: whitesmoke!important;
+  color: #000000!important;
+  font-weight: 300!important;
+}
+#submit__button{
+  height: 2rem!important;
+  border-radius:10rem!important ;
+  padding: 0!important;
+}
+#submit__button:hover{
+  background-color: #003F62;
+  transition: all ease-in-out 0.2s;
+}
+.Login input:focus,
+.Login3 input:focus,
+.RegisterForm {
+  outline: 0px;
+}
+.Login button,
+.Login2 button,
+.Login3 button  {
+  width: 40%;
+  margin-top: 3vmin;
+  padding: 20vmin 0;
+  border: 0;
+  background-color: #EDA415;
+  border-radius: 10vmin;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.7vmin;
+}
+.RegisterForm button{
+  width: 40%;
+  margin-top: 3vmin;
+  padding: 2vmin 0;
+  border: 0;
+  background-color: #EDA415;
+  border-radius: 20vmin;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.7vmin;
+}
+.Login button a,
+.Login2 button a,
+.Login3 button a {
+  text-transform: uppercase;
+  color: white;
+}
+.Login p,
+.Login3 p  {
+  margin-top: 3vmin;
+}
+.RegisterForm p {
+  margin-top: 2vmin;
+}
+.RegisterForm p a{
+  color: white;
+  font-size: 2.4vmin;
+}
+.Login p a,
+.Login3 p a  {
+  color: white;
+  font-size: 2.2vmin;
 }
 /* PROFILE */
 .profile-card{
@@ -735,8 +877,9 @@ textarea:focus {
 
 /* Pagination */
 .pagination .page-link {
-  padding: 10px 30px;
+  padding: 1vmin 4vmin;
   color: #EDA415;
+  font-size: 2.7vmin;
 }
 .page-item.active .page-link {
   background-color: #EDA415;
@@ -804,7 +947,7 @@ textarea:focus {
 }
 
 .checked {
-  color: orange;
+  color: #EDA415;
 }
 
 /* END TESTI */

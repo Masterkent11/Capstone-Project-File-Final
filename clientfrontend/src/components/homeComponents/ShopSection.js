@@ -59,7 +59,7 @@ const ShopSection = (props) => {
                             <h3>₱{Intl.NumberFormat({ style: 'currency', currency: 'PHP' }).format(product.price)}</h3>
                         
                           </div>
-                          
+
                         </div>
                       </div>
                     ))}
