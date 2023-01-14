@@ -7,6 +7,7 @@ import Header from "./../components/Header";
 import { login } from "./../Redux/Actions/userActions";
 import ContactInfo from "./../components/homeComponents/ContactInfo";
 import Footer from "../components/Footer";
+import Video3 from "../components/video/Video3.mp4"
 
 const Login = ({ location, history }) => {
   window.scrollTo(0, 0);
@@ -39,14 +40,16 @@ const Login = ({ location, history }) => {
       console.log(profile)
     }
     const onFailure = (res)=>{
-      console.log(res);
+      console.loshopg(res);
     }
 
 
   return (
     <>
       <Header />
-      <div className="container d-flex flex-column justify-content-center align-items-center login-center">
+      <div className="position-relative">
+      <VideoOverlay/>
+      <div className="container-fluid LoginForm d-md-flex flex-column justify-content-center align-items-center login-center position-absolute justify-items-center top-0 d-none ">
         {error && <Message variant="alert-danger">{error}</Message>}
         {loading && <Loading />}
         <form
@@ -90,6 +93,56 @@ const Login = ({ location, history }) => {
        
       </div>
 
+      {/* Position relative */}
+      
+      <div className="container-fluid d-flex flex-column justify-content-center align-items-center login-center justify-items-center top-0 d-md-none mt-5">
+        {error && <Message variant="alert-danger">{error}</Message>}
+        {loading && <Loading />}
+        <form
+          className="Login3 col-md-8 col-lg-4 col-11"
+          onSubmit={submitHandler}
+        >
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="search__email"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            autoComplete="off"
+            className="search__email"
+          />
+          <button type="submit" id="submit__button">Login</button>
+          <p>
+            <Link
+              to={redirect ? `/register?redirect=${redirect}` : "/register"}
+            >
+              Create Account
+            </Link>
+          </p>
+    
+{/* 
+          <OAuth2Login
+            buttonText=" Login with Facebook"
+            authorizationUrl="https://www.facebook.com/dialog/oauth"
+            responseType="token"
+            clientId="1230316541028928"
+            redirectUri="http://localhost:3001"
+            onSuccess={onSuccess}
+            onFailure={onFailure}/> */}
+        </form>
+       
+      </div>
+      
+
+      {/* Position relative */}
+      </div>
+
       <ContactInfo />
       <Footer />
     </>
@@ -97,3 +150,13 @@ const Login = ({ location, history }) => {
 };
 
 export default Login;
+
+
+//Video Overlay
+export function VideoOverlay() {
+  return (
+  <div className="d-md-block d-none">
+    <video src={Video3} className="w-100"  loop autoPlay muted></video>
+  </div>
+  );
+}

@@ -57,6 +57,8 @@ const ShopSection = (props) => {
                             />
                             <h3>₱{product.price}</h3>
                           </div>
+
+                         
                         </div>
                       </div>
                     ))}
