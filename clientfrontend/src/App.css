@@ -79,7 +79,7 @@ textarea:focus {
 
 .search-button {
   width: 20%;
-  background-color: #f8aa01;
+  background-color: #EDA415;
   color: white;
   border: 0;
   text-transform: uppercase;
@@ -261,7 +261,8 @@ textarea:focus {
   height: 6vmin;
   letter-spacing: 0;
   text-align: center;
-  width: 60vmin;  
+  width: 60vmin;
+  border-radius: 1rem; 
 }
 .form-section input[type="submit"] {
   background: #EDA415;
@@ -272,6 +273,7 @@ textarea:focus {
   padding: 0 3vmin;
   text-transform: uppercase;
   font-size: 2.6vmin;
+  border-radius: 1rem;
   
 }
 
@@ -931,6 +933,7 @@ padding: 8vmin;
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  box-shadow:1px 7px 10px rgb(194, 194, 194);
 }
 .card-main h3{
   font-size: 20px;

@@ -8,8 +8,10 @@ const Testimonials = () => {
 
   <div className="testimonials">
     <div className="container">
-      <h1>Testimonials</h1>
-      <div className="row">
+      <div className="text-center" style={{marginTop:'8vmin', marginBottom:"4vmin"}}>
+        <h1 className="fw-semibold" style={{fontSize:"7vmin"}}>Testimonials</h1>
+      </div>
+    <div className="row">
 
         <div className="col-md-4 text-center">
           <div className="card-main">
