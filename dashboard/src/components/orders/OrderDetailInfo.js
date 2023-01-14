@@ -7,7 +7,7 @@ const OrderDetailInfo = (props) => {
       <div className="col-md-6 col-lg-4">
         <article className="icontext align-items-start">
           <span className="icon icon-sm rounded-circle alert-success">
-            <i className="text-success fas fa-user"></i>
+            <i className="badge4 fas fa-user"></i>
           </span>
           <div className="text">
             <h6 className="mb-1">Customer</h6>
@@ -21,7 +21,7 @@ const OrderDetailInfo = (props) => {
       <div className="col-md-6 col-lg-4">
         <article className="icontext align-items-start">
           <span className="icon icon-sm rounded-circle alert-success">
-            <i className="text-success fas fa-truck-moving"></i>
+            <i className="badge4 fas fa-truck-moving"></i>
           </span>
           <div className="text">
             <h6 className="mb-1">Order info</h6>
@@ -35,7 +35,7 @@ const OrderDetailInfo = (props) => {
       <div className="col-md-6 col-lg-4">
         <article className="icontext align-items-start">
           <span className="icon icon-sm rounded-circle alert-success">
-            <i className="text-success fas fa-map-marker-alt"></i>
+            <i className="badge4 fas fa-map-marker-alt"></i>
           </span>
           <div className="text">
             <h6 className="mb-1">Deliver to</h6>

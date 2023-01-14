@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "./../components/Header";
 import { PayPalButton } from "react-paypal-button-v2";
@@ -9,6 +9,9 @@ import Message from "./../components/LoadingError/Error";
 import moment from "moment";
 import axios from "axios";
 import { ORDER_PAY_RESET } from "../Redux/Constants/OrderConstants";
+import ContactInfo from "../components/homeComponents/ContactInfo";
+import Footer from "./../components/Footer";
+import emailjs from '@emailjs/browser';
 
 const OrderScreen = ({ match }) => {
   window.scrollTo(0, 0);
@@ -58,6 +61,21 @@ const OrderScreen = ({ match }) => {
   const successPaymentHandler = (paymentResult) => {
     dispatch(payOrder(orderId, paymentResult));
   };
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    
+    if(successPaymentHandler === true){
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+    }
+    
 
   return (
     <>
@@ -111,7 +129,7 @@ const OrderScreen = ({ match }) => {
                         </p>
                       </div>
                     ) : (
-                      <div className="bg-danger p-2 col-12">
+                      <div className="not-paid p-2 col-12">
                         <p className="text-white text-center text-sm-start">
                           Not Paid
                         </p>
@@ -144,7 +162,7 @@ const OrderScreen = ({ match }) => {
                         </p>
                       </div>
                     ) : (
-                      <div className="bg-danger p-2 col-12">
+                      <div className="not-paid p-2 col-12">
                         <p className="text-white text-center text-sm-start">
                           Not Delivered
                         </p>
@@ -179,7 +197,7 @@ const OrderScreen = ({ match }) => {
                         </div>
                         <div className="mt-3 mt-md-0 col-md-2 col-6 align-items-end  d-flex flex-column justify-content-center ">
                           <h4>SUBTOTAL</h4>
-                          <h6>${item.qty * item.price}</h6>
+                          <h6>₱{item.price}</h6>
                         </div>
                       </div>
                     ))}
@@ -194,25 +212,25 @@ const OrderScreen = ({ match }) => {
                       <td>
                         <strong>Products</strong>
                       </td>
-                      <td>${order.itemsPrice}</td>
+                      <td>{`₱${order.itemsPrice}`}</td>
                     </tr>
                     <tr>
                       <td>
                         <strong>Shipping</strong>
                       </td>
-                      <td>${order.shippingPrice}</td>
+                      <td>₱{order.shippingPrice}</td>
                     </tr>
                     <tr>
                       <td>
                         <strong>Tax</strong>
                       </td>
-                      <td>${order.taxPrice}</td>
+                      <td>₱{order.taxPrice}</td>
                     </tr>
                     <tr>
                       <td>
                         <strong>Total</strong>
                       </td>
-                      <td>${order.totalPrice}</td>
+                      <td>₱{order.totalPrice}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -225,6 +243,8 @@ const OrderScreen = ({ match }) => {
                       <PayPalButton
                         amount={order.totalPrice}
                         onSuccess={successPaymentHandler}
+                        value="Send"
+                        onSubmit={sendEmail}
                       />
                     )}
                   </div>
@@ -234,6 +254,8 @@ const OrderScreen = ({ match }) => {
           </>
         )}
       </div>
+      <ContactInfo />
+      <Footer />
     </>
   );
 };

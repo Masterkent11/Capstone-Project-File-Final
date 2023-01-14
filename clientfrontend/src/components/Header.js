@@ -3,6 +3,11 @@ import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../Redux/Actions/userActions";
 
+
+
+
+
+
 const Header = () => {
   const [keyword, setKeyword] = useState();
   const dispatch = useDispatch();
@@ -26,6 +31,7 @@ const Header = () => {
     }
   };
   return (
+    
     <div>
       {/* Top Header */}
       <div className="Announcement ">
@@ -35,7 +41,7 @@ const Header = () => {
               <p>+255 768 356 890</p>
               <p>info@zpunet.com</p>
             </div>
-            <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
+            <div className="social-header col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
               <Link to="">
                 <i className="fab fa-facebook-f"></i>
               </Link>
@@ -64,7 +70,7 @@ const Header = () => {
               <div className="row ">
                 <div className="col-6 d-flex align-items-center">
                   <Link className="navbar-brand" to="/">
-                    <img alt="logo" src="/images/logo.png" />
+                    <img alt="logo" src="/images/Logo1.png" />
                   </Link>
                 </div>
                 <div className="col-6 d-flex align-items-center justify-content-end Login-Register">
@@ -77,7 +83,7 @@ const Header = () => {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        <i class="fas fa-user"></i>
+                        <i className="fas fa-user"></i>
                       </button>
                       <div className="dropdown-menu">
                         <Link className="dropdown-item" to="/profile">
@@ -102,7 +108,7 @@ const Header = () => {
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        <i class="fas fa-user"></i>
+                        <i className="fas fa-user"></i>
                       </button>
                       <div className="dropdown-menu">
                         <Link className="dropdown-item" to="/login">
@@ -123,7 +129,7 @@ const Header = () => {
                 </div>
                 <div className="col-12 d-flex align-items-center">
                   <form onSubmit={submitHandler} className="input-group">
-                    <input
+                    <input id="search-1"
                       type="search"
                       className="form-control rounded search"
                       placeholder="Search"
@@ -143,7 +149,7 @@ const Header = () => {
             <div className="row">
               <div className="col-md-3 col-4 d-flex align-items-center">
                 <Link className="navbar-brand" to="/">
-                  <img alt="logo" src="/images/logo.png" />
+                  <img alt="logo" src="/images/Logo1.png" style={{width:"12vmin"}}/>
                 </Link>
               </div>
               <div className="col-md-6 col-8 d-flex align-items-center">
@@ -193,7 +199,7 @@ const Header = () => {
                 )}
 
                 <Link to="/cart">
-                  <i className="fas fa-shopping-bag"></i>
+                  <i className="fas fa-shopping-bag bag-1 "></i>
                   <span className="badge">{cartItems.length}</span>
                 </Link>
               </div>
@@ -202,7 +208,15 @@ const Header = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
 export default Header;
+
+
+
+
+
+
+

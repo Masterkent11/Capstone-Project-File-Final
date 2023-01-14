@@ -14,11 +14,11 @@ const TopTotal = (props) => {
         <div className="card card-body mb-4 shadow-sm">
           <article className="icontext">
             <span className="icon icon-sm rounded-circle alert-primary">
-              <i className="text-primary fas fa-usd-circle"></i>
+              <i className=" fas fa-usd-circle"></i>
             </span>
             <div className="text">
               <h6 className="mb-1">Total Sales</h6>{" "}
-              <span>${totalSale.toFixed(0)}</span>
+              <span>₱{totalSale.toFixed(0)}</span>
             </div>
           </article>
         </div>
@@ -27,7 +27,7 @@ const TopTotal = (props) => {
         <div className="card card-body mb-4 shadow-sm">
           <article className="icontext">
             <span className="icon icon-sm rounded-circle alert-success">
-              <i className="text-success fas fa-bags-shopping"></i>
+              <i className=" fas fa-bags-shopping"></i>
             </span>
             <div className="text">
               <h6 className="mb-1">Total Orders</h6>
@@ -39,8 +39,8 @@ const TopTotal = (props) => {
       <div className="col-lg-4">
         <div className="card card-body mb-4 shadow-sm">
           <article className="icontext">
-            <span className="icon icon-sm rounded-circle alert-warning">
-              <i className="text-warning fas fa-shopping-basket"></i>
+            <span className="icon icon-sm rounded-circle alert-success">
+              <i className=" fas fa-shopping-basket"></i>
             </span>
             <div className="text">
               <h6 className="mb-1">Total Products</h6>
