@@ -7,6 +7,8 @@ import Header from "./../components/Header";
 import { login } from "./../Redux/Actions/userActions";
 import ContactInfo from "./../components/homeComponents/ContactInfo";
 import Footer from "../components/Footer";
+import jwt_decode from 'jwt-decode'
+
 
 const Login = ({ location, history }) => {
   window.scrollTo(0, 0);
@@ -29,6 +31,38 @@ const Login = ({ location, history }) => {
     e.preventDefault();
     dispatch(login(email, password));
   };
+
+  // Google
+  const google = window.google;
+
+  const [user,setUser] = useState({})
+
+  function test(response){
+    console.log("Encoded JWT Token: "+response.credential)
+    var userObject = jwt_decode(response.credential)
+    console.log(userObject)
+    setUser(userObject)
+    document.getElementById('signIn').hidden=true
+  }
+
+  function handleSignout(event){
+    setUser({})
+    document.getElementById('signIn').hidden=false
+  }
+
+  useEffect(()=>{
+        google.accounts.id.initialize({
+        client_id: '892119654427-kp9o9a029fkile3u0pjguhrc9pp6mads.apps.googleusercontent.com',
+        callback: test
+  })
+
+  google.accounts.id.renderButton(
+    document.getElementById('signIn'),
+    {theme: 'outline',size:'large'}
+
+  )
+  },[])
+
 
 
   return (
@@ -58,6 +92,22 @@ const Login = ({ location, history }) => {
           />
           <button type="submit" id="submit__button">Login</button>
           <p>
+
+
+            {/*  */}
+
+            <div id="signIn"></div>
+        {Object.keys(user).length!=0 &&
+         <button onClick={(e)=>handleSignout(e)}>Signout</button>
+        
+        }
+
+        {
+          user && <div className="details"><img src={user.picture} alt="" />
+          <h3>{user.name}</h3>
+          </div>
+        }
+            
             <Link
               to={redirect ? `/register?redirect=${redirect}` : "/register"}
             >
@@ -65,15 +115,6 @@ const Login = ({ location, history }) => {
             </Link>
           </p>
     
-{/* 
-          <OAuth2Login
-            buttonText=" Login with Facebook"
-            authorizationUrl="https://www.facebook.com/dialog/oauth"
-            responseType="token"
-            clientId="1230316541028928"
-            redirectUri="http://localhost:3001"
-            onSuccess={onSuccess}
-            onFailure={onFailure}/> */}
         </form>
        
       </div>
