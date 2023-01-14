@@ -919,11 +919,13 @@ padding: 8vmin;
 .card-main{
   padding: 70px 10px 10px;
   margin-top: 60px;
-  height: 350px;
   border-radius: 10px;
   color: rgb(33, 33, 33);
   box-shadow: 10px 10px 10px rgb(194, 194, 194);
   cursor: pointer;
+}
+.card-main >p{
+  text-align: left;
 }
 .user{
   margin-top: -150px;
