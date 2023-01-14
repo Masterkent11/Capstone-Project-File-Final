@@ -781,7 +781,7 @@ textarea:focus {
 .user{
   margin-top: -150px;
   left: calc(50% - 60px);
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid #003F62;
 }
 
 .user{
@@ -791,7 +791,7 @@ textarea:focus {
 }
 .card-main h3{
   font-size: 20px;
-  color: rgb(255, 249, 249);
+  color: rgb(33, 33, 33);
 }
 
 .card-main:hover{
@@ -808,3 +808,26 @@ textarea:focus {
 }
 
 /* END TESTI */
+
+/* Contact Us Section */
+
+#contact h2::after{
+  content: '';
+  background: #1c1c1c;
+  display: block;
+  height: 3px;
+  width: 100%;
+  margin: 10px auto 5px;
+}
+#submit{
+border: none;
+padding: 5px;
+font-size: 20px;
+width: 100px;
+color: white;
+background: #1c1c1c;
+position: relative;
+left: 42%;
+}
+
+/* Contact Us Section END */

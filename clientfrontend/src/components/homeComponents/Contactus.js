@@ -38,9 +38,9 @@ const Contactus = () => {
 
     <div className="row">
 
-      <div className="col-lg-6 ">
+      {/* <div className="col-lg-6 ">
         <iframe className="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.80254902792!2d121.04663401483968!3d14.553281089832643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8efd99aad53%3A0xb64b39847a866fde!2skodego!5e0!3m2!1sen!2sph!4v1667379719818!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      </div> */}
 
       <div className="col-lg-6">
         <form action="#" method="post" role="form" className="php-email-form">
@@ -64,7 +64,6 @@ const Contactus = () => {
 
         </form>
       </div>
-
     </div>
 
   </div>
