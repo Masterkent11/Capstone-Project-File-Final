@@ -3,6 +3,13 @@ import React from "react";
 const ContactInfo = () => {
   return (
     <div className="contactInfo container">
+        <div class="testimonials">
+          <div class="container">
+            <div className="text-center" style={{marginTop:'8vmin', marginBottom:"4vmin"}}>
+              <h1 className="fw-semibold" style={{fontSize:"7vmin"}}>Contact US</h1>
+            </div>
+          </div>
+        </div>
       <div className="row">
         <div className="col-12 col-md-4 contact-Box">
           <div className="box-info">
