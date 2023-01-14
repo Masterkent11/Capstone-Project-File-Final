@@ -12,7 +12,7 @@ const Banner = () => {
         <div class="testimonials">
           <div class="container">
             <div className="text-center" style={{marginTop:'8vmin', marginBottom:"4vmin"}}>
-              <h1 className="fw-semibold" style={{fontSize:"7vmin"}}>Products</h1>
+              <h1 className="fw-semibold" style={{fontSize:"5vmin"}}>Products</h1>
             </div>
           </div>
         </div>
