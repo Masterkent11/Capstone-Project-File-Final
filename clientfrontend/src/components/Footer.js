@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 export function FooterTop() {
   return(
     <div className="text-center" style={{backgroundColor:"#003F62", padding:"5vmin"}}>
-      <img  style={{width:'25vmin'}} src={Logo} alt='aa'/>
+      <Link to="/"><img  style={{width:'25vmin'}} src={Logo} alt='aa'/></Link>
       <p className="d-flex justify-content-center gap-1 text-light" style={{fontSize:"2.5vmin"}}>
         <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
         <span>Copyright XploRear 2023</span>
