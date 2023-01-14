@@ -41,23 +41,6 @@ const Header = () => {
               <p>(02) 8808-5901</p>
               <p>xplorear@gmail.com</p>
             </div>
-            <div className="social-header col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-              <Link to="">
-                <i className="fab fa-facebook-f"  style={{fontSize:"3.5vmin"}}></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-instagram" style={{fontSize:"3.5vmin"}}></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-linkedin-in"  style={{fontSize:"3.5vmin"}}></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-youtube"  style={{fontSize:"3.5vmin"}}></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-pinterest-p"  style={{fontSize:"3.5vmin"}}></i>
-              </Link>
-            </div>
           </div>
         </div>
       </div>

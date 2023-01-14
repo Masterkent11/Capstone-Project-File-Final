@@ -79,7 +79,7 @@ textarea:focus {
 
 .search-button {
   width: 20%;
-  background-color: #f8aa01;
+  background-color: #EDA415;
   color: white;
   border: 0;
   text-transform: uppercase;
@@ -180,10 +180,9 @@ textarea:focus {
   border: 1px solid #f3f3f3;
   border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  /* height: 420px; */
   height: 60vmin;
   margin-left: 5vmin;
-  
+  box-shadow: 10px 10px 10px rgb(194, 194, 194);
 }
 .shopBack {
   /* 250px */
@@ -261,7 +260,8 @@ textarea:focus {
   height: 6vmin;
   letter-spacing: 0;
   text-align: center;
-  width: 60vmin;  
+  width: 60vmin;
+  border-radius: 1rem; 
 }
 .form-section input[type="submit"] {
   background: #EDA415;
@@ -272,6 +272,7 @@ textarea:focus {
   padding: 0 3vmin;
   text-transform: uppercase;
   font-size: 2.6vmin;
+  border-radius: 1rem;
   
 }
 
@@ -304,8 +305,10 @@ textarea:focus {
   width: 80%;
   flex-direction: column;
   padding: 6vmin 0;
-  box-shadow: 3px 2px 15px 3px rgba(151, 109, 0, 0.2);
+  /* box-shadow: 3px 2px 15px 3px rgba(151, 109, 0, 0.2); */
+  box-shadow: 10px 10px 10px rgb(194, 194, 194);;
   border-radius: 1rem;
+  cursor: pointer;
 }
 .info-image {
   width: 9vmin;
@@ -920,6 +923,7 @@ padding: 8vmin;
   border-radius: 10px;
   color: rgb(33, 33, 33);
   box-shadow: 10px 10px 10px rgb(194, 194, 194);
+  cursor: pointer;
 }
 .user{
   margin-top: -150px;
@@ -931,16 +935,14 @@ padding: 8vmin;
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  box-shadow:1px 7px 10px rgb(194, 194, 194);
 }
 .card-main h3{
   font-size: 20px;
   color: rgb(33, 33, 33);
 }
 
-.card-main:hover{
-  box-shadow: 0 0 15px 5px rgba(22, 21, 21, 0.5) ;
-  cursor: pointer;
-}
+
 .card-main span{
   margin-top: 20px;
   font-size: 12px;

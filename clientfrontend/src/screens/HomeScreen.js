@@ -17,8 +17,8 @@ const HomeScreen = ({ match }) => {
       <Banner/>
       <ShopSection keyword={keyword} pagenumber={pagenumber} />
       <CalltoActionSection />
-      <ContactInfo />
       <Testimonials />
+      <ContactInfo />
       <Footer />
     </div>
   );
