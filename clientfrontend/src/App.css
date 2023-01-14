@@ -269,7 +269,7 @@ textarea:focus {
 }
 
 #video_overlay{
- position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -742,3 +742,69 @@ textarea:focus {
   background-color: #EDA415;
   border: 1px solid #EDA415;
 }
+
+/* TESTIMONIALS */
+
+.testimonials{
+  margin: 50px auto;
+
+}
+.testimonials h1{
+  text-align: center;
+  font-weight: bold;
+  color: #1c1c1c;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.testimonials h1::after{
+  content: '';
+  background: #1c1c1c;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.testimonials .row{
+  margin-top: 30px;
+}
+.col.-md-4{
+  margin: 40px auto;
+}
+.card-main{
+  padding: 70px 10px 10px;
+  margin-top: 60px;
+  height: 350px;
+  border-radius: 10px;
+  color: rgb(33, 33, 33);
+  box-shadow: 10px 10px 10px rgb(194, 194, 194);
+}
+.user{
+  margin-top: -150px;
+  left: calc(50% - 60px);
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.user{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.card-main h3{
+  font-size: 20px;
+  color: rgb(255, 249, 249);
+}
+
+.card-main:hover{
+  box-shadow: 0 0 15px 5px rgba(22, 21, 21, 0.5) ;
+  cursor: pointer;
+}
+.card-main span{
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* END TESTI */
