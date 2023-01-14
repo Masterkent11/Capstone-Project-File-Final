@@ -18,38 +18,38 @@ const UserComponent = () => {
     <section className="content-main">
       <div className="content-header">
         <h2 className="content-title">Customers</h2>
-        <div>
+        {/* <div>
           <Link to="#" className="btn btn-primary">
             <i className="material-icons md-plus"></i> Create new
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <div className="card mb-4">
         <header className="card-header">
           <div className="row gx-3">
-            <div className="col-lg-4 col-md-6 me-auto">
+            {/* <div className="col-lg-4 col-md-6 me-auto">
               <input
                 type="text"
                 placeholder="Search..."
                 className="form-control"
               />
-            </div>
-            <div className="col-lg-2 col-6 col-md-3">
+            </div> */}
+            {/* <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
                 <option>Show 20</option>
                 <option>Show 30</option>
                 <option>Show 40</option>
                 <option>Show all</option>
               </select>
-            </div>
-            <div className="col-lg-2 col-6 col-md-3">
+            </div> */}
+            {/* <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
                 <option>Status: all</option>
                 <option>Active only</option>
                 <option>Disabled</option>
               </select>
-            </div>
+            </div> */}
           </div>
         </header>
 

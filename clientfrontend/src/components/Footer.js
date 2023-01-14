@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from './video/Logo.png'
+import {Link} from "react-router-dom"
 
 
 export function FooterTop() {
@@ -11,6 +12,9 @@ export function FooterTop() {
         <span>Copyright XploRear 2023</span>
       </p>
     </div>
+    
+
+
   )
 }
 

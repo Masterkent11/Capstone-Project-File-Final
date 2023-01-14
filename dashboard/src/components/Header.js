@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 import { useDispatch } from "react-redux";
 import { logout } from "../Redux/Actions/userActions";
+import Logo from './Logo-2.png'
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,12 @@ const Header = () => {
 
   return (
     <header className="main-header navbar">
-      <div className="col-search">
+
+    <div className="text-center" style={{backgroundColor:"#003F62" , width:"100%",}}>
+      <img style={{width:'25vmin'}} src={Logo} alt='aa'/>
+    </div>
+
+      {/* <div className="col-search">
         <form className="searchform">
           <div className="input-group">
             <input
@@ -51,8 +57,8 @@ const Header = () => {
             <option value="Ahmed Hassan" />
           </datalist>
         </form>
-      </div>
-      <div className="col-nav">
+      </div> */}
+      {/* <div className="col-nav">
         <button
           className="btn btn-icon btn-mobile me-auto"
           data-trigger="#offcanvas_aside"
@@ -100,7 +106,7 @@ const Header = () => {
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
     </header>
   );
 };

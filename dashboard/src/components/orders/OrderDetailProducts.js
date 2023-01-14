@@ -68,7 +68,7 @@ const OrderDetailProducts = (props) => {
                 <dt className="text-muted">Status:</dt>
                 <dd>
                   {order.isPaid ? (
-                    <span className="badge rounded-pill alert alert-success text-success">
+                    <span className="badge rounded-pill alert alert-success badge4">
                       Payment done
                     </span>
                   ) : (
