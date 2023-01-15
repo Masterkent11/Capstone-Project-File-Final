@@ -190,7 +190,7 @@ textarea:focus {
   border: 1px solid #f3f3f3;
   border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  height: 60vmin;
+  /* height: 60vmin; */
   margin-left: 5vmin;
   box-shadow: 10px 10px 10px rgb(194, 194, 194);
 }
@@ -205,7 +205,6 @@ textarea:focus {
 }
 .shopBack img {
   width: 100%;
-  /* 250px */
   height: 37vmin;
   object-fit: cover;
 }
@@ -967,7 +966,7 @@ padding: 8vmin;
 .Overlay:hover >* {
   transform: translateY(0);
 }
-=======
+
 /* TESTIMONIALS */
 
 .testimonials{
@@ -996,9 +995,8 @@ padding: 8vmin;
   margin: 40px auto;
 }
 .card-main{
-  padding: 70px 20px 20px;
+  padding: 70px 10px 20px;
   margin-top: 60px;
-  height: 350px;
   border-radius: 10px;
   color: rgb(33, 33, 33);
   box-shadow: 10px 10px 10px rgb(194, 194, 194);
@@ -1006,6 +1004,7 @@ padding: 8vmin;
   font-size: 2vmin;
   text-align: center;
   box-shadow: 5px 5px 5px rgb(194 194 194)!important;
+  margin-bottom: 1rem;
 }
 .card-main:hover {
   box-shadow: 10px 10px 10px rgb(194 194 194)!important;
@@ -1018,7 +1017,7 @@ padding: 8vmin;
 
 
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
 
   .card-main >p {
     font-size: 2vmin;
@@ -1052,7 +1051,7 @@ padding: 8vmin;
       font-size: 4vmin;
     }
   
-}
+} */
 .input-group>.form-control, .input-group>.form-select{
   font-size: 2vmin!important;
 }
