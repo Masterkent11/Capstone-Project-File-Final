@@ -52,13 +52,13 @@ const OurTeam = () => {
         }
     }
 
-    const infoPerson = new Info(NessanImage, "Nessan Joe V. Ipulan", "Member", "https://www.facebook.com/Kneesuns", "https://www.linkedin.com/in/nessan-joe-ipulan-b8b160173/", "https://courageous-kashata-4e58f3.netlify.app")
+    const infoPerson = new Info(NessanImage, "Nessan Joe V. Ipulan", "Member", "https://www.facebook.com/Kneesuns", "https://www.linkedin.com/in/nessan-joe-ipulan-b8b160173/", "https://brilliant-beignet-18498e.netlify.app/")
     const content = infoPerson.personInformation();
 
     const infoPerson2 = new Info(lester, "Lester De Silva", "Member", "https://www.facebook.com/lester.desilva/", "https://www.linkedin.com/in/lester-de-silva-260884200/", "https://lester-d-portfolio.netlify.app/")
     const content2 = infoPerson2.personInformation();
 
-    const infoPerson3 = new Info(Kurt, "Kurt Angelo Agualada", "Member", "https://www.linkedin.com/in/kurt-angelo-agualada-879056233/", "https://kurtangeloagualada.netlify.app/")
+    const infoPerson3 = new Info(Kurt, "Kurt Angelo Agualada", "Member","https://www.facebook.com/kurtangelo.agualada", "https://www.linkedin.com/in/kurt-angelo-agualada-879056233/", "https://kurtangeloagualada.netlify.app/")
     const content3 = infoPerson3.personInformation();
 
     const infoPerson4 = new Info(Kent, "Kent Ashley Clementir", "Member", "https://www.facebook.com/profile.php?id=100079842521652", "https://www.linkedin.com/in/kent-ashley-clementir-776090217/", "https://kentash.vercel.app/")
