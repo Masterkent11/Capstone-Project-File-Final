@@ -4,8 +4,6 @@ import Video1 from "../video/Video1.mp4"
 
 
 
-
-
 const CalltoActionSection = () => {
 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -26,7 +24,7 @@ const CalltoActionSection = () => {
   };
   return (
     <>
-
+  
     <div className="subscribe-section bg-with-black" style={{position:"relative"}}>
       <video src={Video1} style={{display:"block", width:"100%"}}  autoPlay loop muted id="video"></video>
 
@@ -39,7 +37,7 @@ const CalltoActionSection = () => {
             
             <form ref={form} onSubmit={sendEmail} className="d-none form-section d-sm-flex justify-content-center gap-2">
                 <input placeholder="Your Email..." name="email" type="email"  />
-                <input value="Yes. I want!" type="submit" name='email' id="email" />
+                <input value="Yes. I want!" type="submit" name='email' id="email"  />
               </form></div>: <div><h2 style={{color:'white'}}>Thank you for submitting!</h2>
              </div> }
           

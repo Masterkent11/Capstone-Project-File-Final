@@ -1,7 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
+import GoogleMap from "./GoogleMap";
+import { Stack } from "@mui/system";
 
 
 const ContactInfo = () => {
+  const [googleMapApi, setgoogleMapApi] = useState(true);
+
+  const GoogleMapAPI = ()=>{
+    setgoogleMapApi(false)
+  }
+  
+
+
   return (
 
     <div className="contactInfo container">
@@ -13,7 +23,7 @@ const ContactInfo = () => {
             </div>
           </div>
         </div>
-      <div className="row">
+      <div className="row" >
         <div className="col-12 col-md-4 contact-Box">
           <div className="box-info">
             <div className="info-image">
@@ -24,7 +34,7 @@ const ContactInfo = () => {
           </div>
         </div>
         <div className="col-12 col-md-4 contact-Box">
-          <div className="box-info">
+          <div className="box-info" onClick={GoogleMapAPI}>
             <div className="info-image">
               <i className="fas fa-map-marker-alt"></i>
             </div>
@@ -41,8 +51,20 @@ const ContactInfo = () => {
             <p>(02) 8808-5901</p>
           </div>
         </div>
+        {!googleMapApi ? (
+            <Stack 
+              sx={{marginTop: '4rem'}}
+              >
+                <GoogleMap/>
+              </Stack>
+                )  
+                : <></>}
       </div>
+    
+
+    
     </div>
+
   );
 };
 
