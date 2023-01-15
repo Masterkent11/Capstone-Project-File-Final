@@ -57,7 +57,7 @@ const OurTeam = () => {
     const infoPerson2 = new Info(lester, "Lester De Silva", "Member", "https://www.facebook.com/lester.desilva/", "https://www.linkedin.com/in/lester-de-silva-260884200/", "https://lester-d-portfolio.netlify.app/")
     const content2 = infoPerson2.personInformation();
 
-    const infoPerson3 = new Info(Kurt, "Kurt Angelo Agualada", "Member", "https://www.linkedin.com/in/kurt-angelo-agualada-879056233/", "https://kurtangeloagualada.netlify.app/")
+    const infoPerson3 = new Info(Kurt, "Kurt Angelo Agualada", "Member","https://www.facebook.com/kurtangelo.agualada", "https://www.linkedin.com/in/kurt-angelo-agualada-879056233/", "https://kurtangeloagualada.netlify.app/")
     const content3 = infoPerson3.personInformation();
 
 
