@@ -4,12 +4,13 @@ import Logo from './video/Logo.png'
 
 export function FooterTop() {
   return(
-    <div className="text-center" style={{backgroundColor:"#003F62", padding:"5vmin"}}>
+    <div className="text-center" style={{backgroundColor:"#003F62", padding:"3vmin"}}>
       <img  style={{width:'25vmin'}} src={Logo} alt='aa'/>
       <p className="d-flex justify-content-center gap-1 text-light" style={{fontSize:"2.5vmin"}}>
         <span><i class="fa fa-copyright" aria-hidden="true"></i></span>
         <span>Copyright XploRear 2023</span>
       </p>
+      
     </div>
   )
 }
