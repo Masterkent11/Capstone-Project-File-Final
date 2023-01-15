@@ -1,6 +1,7 @@
 import NessanImage from "../components/video/Img1.png";
 import lester from "../components/video/Img2.jpg"
 import Kurt from "../components/video/img3.jpg"
+import Kent from "../components/video/img4.png"
 import Header from "./../components/Header";
 import Footer from "../components/Footer";
 
@@ -60,6 +61,9 @@ const OurTeam = () => {
     const infoPerson3 = new Info(Kurt, "Kurt Angelo Agualada", "Member", "https://www.linkedin.com/in/kurt-angelo-agualada-879056233/", "https://kurtangeloagualada.netlify.app/")
     const content3 = infoPerson3.personInformation();
 
+    const infoPerson4 = new Info(Kent, "Kent Ashley Clementir", "Member", "https://www.facebook.com/profile.php?id=100079842521652", "https://www.linkedin.com/in/kent-ashley-clementir-776090217/", "https://kentash.vercel.app/")
+    const content4 = infoPerson4.personInformation();
+
 
 return (
     <>
@@ -78,7 +82,7 @@ return (
             {content}
             {content2}
             {content3}
-            {content}
+            {content4}
             {content}
         </div>
     </div>
