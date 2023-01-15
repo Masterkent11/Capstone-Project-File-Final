@@ -518,11 +518,10 @@ textarea:focus {
 padding: 8vmin;
 
 }
-.Login,
-.Login2 {
+.Login, .Login2 {
   border-radius: 5px;
   padding: 5vmin 5vmin 5vmin;
-  background: rgba( 0, 63, 98, 0.4 );
+  background: #003F62;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
@@ -615,7 +614,6 @@ padding: 8vmin;
   outline: 0px;
 }
 .Login button,
-.Login2 button,
 .Login3 button{
   width: 40%;
   margin-top: 3vmin;
@@ -626,6 +624,16 @@ padding: 8vmin;
   text-transform: uppercase;
   color: white;
   font-size: 2.7vmin;
+}
+.Login2 button{
+  width: auto;
+  margin-top: 3vmin;
+  border: 0;
+  background-color: #EDA415;
+  border-radius: 5vmin;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2vmin;
 }
 .Shipping button{
   width: 40%;
@@ -1049,34 +1057,11 @@ padding: 8vmin;
   box-shadow:1px 7px 10px rgb(194, 194, 194);
 }
 
-@media screen and (max-width: 1024px) {
-
-  .user{
-    height: 100px;
-    width: 100px;
-  }
-
-  .card-main{
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .user{
-    height: 90px;
-    width: 90px;
-  }
-  .card-main{
-    height: auto;
-  }
-}
-
 .card-main h3{
   font-size: 2.5vmin;
   color: rgb(33, 33, 33);
   font-weight: 900;
 }
-
 
 .card-main span{
   margin-top: 20px;
