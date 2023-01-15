@@ -66,7 +66,7 @@ textarea:focus {
 
 /* Header */
 .header {
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
   background: #003F62;
 }
 .navbar-brand img {
@@ -75,6 +75,16 @@ textarea:focus {
 .input-group {
   height: 50px;
   width: 90%;
+}
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu){
+  border-top-left-radius: 1.5rem!important;
+  border-bottom-left-radius: 1.5rem!important;
+  height: 2.4rem;
+}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+  border-top-right-radius: 1.5rem!important;
+  border-bottom-right-radius: 1.5rem!important;
+  height: 2.4rem;
 }
 
 .search-button {
@@ -986,15 +996,70 @@ padding: 8vmin;
   margin: 40px auto;
 }
 .card-main{
-  padding: 70px 10px 10px;
+  padding: 70px 20px 20px;
   margin-top: 60px;
+  height: 350px;
   border-radius: 10px;
   color: rgb(33, 33, 33);
   box-shadow: 10px 10px 10px rgb(194, 194, 194);
   cursor: pointer;
+  font-size: 2vmin;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(194 194 194)!important;
 }
-.card-main >p{
+.card-main:hover {
+  box-shadow: 10px 10px 10px rgb(194 194 194)!important;
+  transition: all ease-in-out 1s!important;
+}
+.card-main > p{
+  font-size: 2vmin;
   text-align: left;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  .card-main >p {
+    font-size: 2vmin;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-main > img {
+    width: 8rem;
+    height: 8rem;
+
+  }
+  .card-main{
+    height: 300px;
+  }
+  .card-main >p {
+    font-size: 4vmin;
+  }
+}
+  @media screen and (max-width: 300px) {
+
+    .card-main > img {
+      width: 5rem;
+      height: 5rem;
+  
+    }
+    .card-main{
+      height: 280px;
+    }
+    .card-main >p {
+      font-size: 4vmin;
+    }
+  
+}
+.input-group>.form-control, .input-group>.form-select{
+  font-size: 2vmin!important;
+}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -6px!important;
+  border-top-left-radius: 5;
+  border-bottom-left-radius: 3;
 }
 .user{
   margin-top: -150px;

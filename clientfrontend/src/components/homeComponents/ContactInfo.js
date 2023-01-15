@@ -1,8 +1,11 @@
 import React from "react";
 
+
 const ContactInfo = () => {
   return (
+
     <div className="contactInfo container">
+
         <div class="testimonials">
           <div class="container">
             <div className="text-center" style={{marginTop:'8vmin', marginBottom:"4vmin"}}>
