@@ -26,7 +26,7 @@ const LatestOrder = (props) => {
                   <td>{`₱ ${Intl.NumberFormat({ style: 'currency', currency: 'PHP' }).format(order.totalPrice)}`}</td>
                   <td>
                     {order.isPaid ? (
-                      <span className="badge rounded-pill alert-success">
+                      <span className="badge rounded-pill alert-primary">
                         Paid At {moment(order.paidAt).format("MMM Do YY")}
                       </span>
                     ) : (
@@ -37,7 +37,7 @@ const LatestOrder = (props) => {
                   </td>
                   <td>{moment(order.createdAt).calendar()}</td>
                   <td className="d-flex justify-content-end align-item-center">
-                    <Link to={`/order/${order._id}`} className="text-success">
+                    <Link to={`/order/${order._id}`} className="badge4">
                       <i className="fas fa-eye"></i>
                     </Link>
                   </td>

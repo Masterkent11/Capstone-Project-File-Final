@@ -33,13 +33,9 @@ const Header = () => {
   return (
     <header className="main-header navbar">
 
-    <div className="text-center" style={{backgroundColor:"#003F62" , width:"100%",}}>
-      <img style={{width:'25vmin'}} src={Logo} alt='aa'/>
-    </div>
-
-      {/* <div className="col-search">
+      <div className="col-search">
         <form className="searchform">
-          <div className="input-group">
+          {/* <div className="input-group">
             <input
               list="search_terms"
               type="text"
@@ -55,18 +51,19 @@ const Header = () => {
             <option value="New orders" />
             <option value="Apple iphone" />
             <option value="Ahmed Hassan" />
-          </datalist>
+          </datalist> */}
         </form>
-      </div> */}
-      {/* <div className="col-nav">
-        <button
+      </div>
+
+    <div className="col-nav">
+        {/* <button
           className="btn btn-icon btn-mobile me-auto"
           data-trigger="#offcanvas_aside"
         >
           <i className="md-28 fas fa-bars"></i>
-        </button>
+        </button> */}
         <ul className="nav">
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link className={`nav-link btn-icon `} title="Dark mode" to="#">
               <i className="fas fa-moon"></i>
             </Link>
@@ -80,7 +77,7 @@ const Header = () => {
             <Link className="nav-link" to="#">
               English
             </Link>
-          </li>
+          </li> */}
           <li className="dropdown nav-item">
             <Link className="dropdown-toggle" data-bs-toggle="dropdown" to="#">
               <img
@@ -90,12 +87,12 @@ const Header = () => {
               />
             </Link>
             <div className="dropdown-menu dropdown-menu-end">
-              <Link className="dropdown-item" to="/">
+              {/* <Link className="dropdown-item" to="/">
                 My profile
               </Link>
               <Link className="dropdown-item" to="#">
                 Settings
-              </Link>
+              </Link> */}
               <Link
                 onClick={logoutHandler}
                 className="dropdown-item text-danger"
@@ -106,7 +103,11 @@ const Header = () => {
             </div>
           </li>
         </ul>
-      </div> */}
+      </div>
+
+    <div className="text-center" style={{backgroundColor:"#003F62" , width:"100%",}}>
+      <img style={{width:'25vmin'}} src={Logo} alt='aa'/>
+    </div>
     </header>
   );
 };
