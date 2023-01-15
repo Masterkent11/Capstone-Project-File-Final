@@ -190,7 +190,7 @@ textarea:focus {
   border: 1px solid #f3f3f3;
   border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  /* height: 60vmin; */
+  height: 60vmin;
   margin-left: 5vmin;
   box-shadow: 10px 10px 10px rgb(194, 194, 194);
 }
