@@ -6,13 +6,14 @@ import productRoute from "./Routes/ProductRoutes.js";
 import { errorHandler, notFound } from "./Middleware/Errors.js";
 import userRouter from "./Routes/UserRoutes.js";
 import orderRouter from "./Routes/orderRoutes.js";
+import cors from "cors";
 
 
 dotenv.config();
 connectDatabase();
 const app = express();
 app.use(express.json());
-// const cors = require('cors');
+app.use(cors());
 
 // API
 app.use("/api/import", ImportData);
