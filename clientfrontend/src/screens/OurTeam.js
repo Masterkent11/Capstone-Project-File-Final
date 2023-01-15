@@ -1,7 +1,8 @@
 import NessanImage from "../components/video/Img1.png";
+import lester from "../components/video/Img2.jpg"
 import Header from "./../components/Header";
 import Footer from "../components/Footer";
-import Link from "react-router-dom";
+
 
 const OurTeam = () => {
 
@@ -52,7 +53,12 @@ const OurTeam = () => {
     const infoPerson = new Info(NessanImage, "Nessan Joe V. Ipulan", "Member", "https://www.facebook.com/Kneesuns", "https://www.linkedin.com/in/nessan-joe-ipulan-b8b160173/", "https://courageous-kashata-4e58f3.netlify.app")
     const content = infoPerson.personInformation();
 
-  return (
+    const infoPerson2 = new Info(lester, "Lester De Silva", "Member", "https://www.facebook.com/lester.desilva/", "https://www.linkedin.com/in/lester-de-silva-260884200/", "https://lester-d-portfolio.netlify.app/")
+    const content2 = infoPerson2.personInformation();
+
+    
+
+return (
     <>
     <Header/>
     <div className="text-center" style={{marginTop:"10vmin", marginBottom:'8vmin'}}>
@@ -67,7 +73,7 @@ const OurTeam = () => {
     <div className="container">
         <div className="row d-flex justify-content-evenly">
             {content}
-            {content}
+            {content2}
             {content}
             {content}
             {content}
@@ -75,7 +81,7 @@ const OurTeam = () => {
     </div>
     <Footer/>
     </>
-  )
+)
 }
 
 export default OurTeam
