@@ -161,3 +161,33 @@
     height: 200px;
   }
 }
+
+/* Testimonials */
+
+@media screen and (max-width: 1024px) {
+
+  .user{
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-main{
+    height: auto;
+  }
+  .border-product{
+    padding: 1.5rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .user{
+    height: 90px;
+    width: 90px;
+  }
+  .card-main{
+    height: auto;
+  }
+}
+
+/* Testi End */
