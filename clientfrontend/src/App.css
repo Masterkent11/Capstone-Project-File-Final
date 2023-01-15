@@ -284,6 +284,13 @@ textarea:focus {
   border-radius: 1rem;
   
 }
+#video{
+  -webkit-filter: blur(10px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
 
 #video_overlay{
   position: absolute;
@@ -297,6 +304,10 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
+  
+}
+#call__to__action{
+  color: whitesmoke;
 }
 
 /* CONTACT */
