@@ -5,6 +5,7 @@ import Video1 from "../video/Video1.mp4"
 
 
 
+
 const CalltoActionSection = () => {
 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -25,20 +26,21 @@ const CalltoActionSection = () => {
   };
   return (
     <>
+
     <div className="subscribe-section bg-with-black" style={{position:"relative"}}>
-      <video src={Video1} style={{display:"block", width:"100%"}}  autoPlay loop muted></video>
+      <video src={Video1} style={{display:"block", width:"100%"}}  autoPlay loop muted id="video"></video>
 
       <div className="container-fluid" id="video_overlay">
         <div className="row">
           <div className="col-xs-12">
             <div className="subscribe-head">
 
-            {!isFormSubmitted ? <div> <h2 className="d-none d-sm-block">BE ON FIRST IN EVERYTHING!</h2>  <p>Sign up free and get the latest offers.</p>
+            {!isFormSubmitted ? <div> <h2 className="d-none d-sm-block" style={{color:'white'}}>BE ON FIRST IN EVERYTHING!</h2>  <p style={{color:'white'}} id="call__to__action">Sign up free and get the latest offers.</p>
             
             <form ref={form} onSubmit={sendEmail} className="d-none form-section d-sm-flex justify-content-center gap-2">
                 <input placeholder="Your Email..." name="email" type="email"  />
                 <input value="Yes. I want!" type="submit" name='email' id="email" />
-              </form></div>: <div><h2>Thank you for submitting!</h2>
+              </form></div>: <div><h2 style={{color:'white'}}>Thank you for submitting!</h2>
              </div> }
           
 
