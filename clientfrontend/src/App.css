@@ -1027,42 +1027,6 @@ padding: 8vmin;
 }
 
 
-
-/* @media screen and (max-width: 800px) {
-
-  .card-main >p {
-    font-size: 2vmin;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .card-main > img {
-    width: 8rem;
-    height: 8rem;
-
-  }
-  .card-main{
-    height: 300px;
-  }
-  .card-main >p {
-    font-size: 4vmin;
-  }
-}
-  @media screen and (max-width: 300px) {
-
-    .card-main > img {
-      width: 5rem;
-      height: 5rem;
-  
-    }
-    .card-main{
-      height: 280px;
-    }
-    .card-main >p {
-      font-size: 4vmin;
-    }
-  
-} */
 .input-group>.form-control, .input-group>.form-select{
   font-size: 2vmin!important;
 }
@@ -1083,15 +1047,32 @@ padding: 8vmin;
   border-radius: 50%;
   box-shadow:1px 7px 10px rgb(194, 194, 194);
 }
+
+@media screen and (max-width: 1024px) {
+
+  .user{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .user{
+    height: 90px;
+    width: 90px;
+  }
+}
+
 .card-main h3{
-  font-size: 20px;
+  font-size: 2.5vmin;
   color: rgb(33, 33, 33);
+  font-weight: 900;
 }
 
 
 .card-main span{
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 2vmin;
 }
 
 .checked {
