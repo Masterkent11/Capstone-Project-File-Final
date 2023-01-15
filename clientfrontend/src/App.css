@@ -521,6 +521,17 @@ padding: 8vmin;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   text-align: center;
 }
+.Shipping{
+  border-radius: 5px;
+  padding: 4vmin 4vmin 4vmin;
+  background: #003F62;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  text-align: center;
+}
 .Login3{
   border-radius: 5px;
   padding: 5vmin 5vmin 5vmin;
@@ -533,13 +544,22 @@ padding: 8vmin;
   text-align: center;
 }
 .Login input,
-.Login3 input {
+.Login3 input{
   width: 95%;
   padding: 3vmin 3vmin;
   margin-top: 2.5vmin;
   border: 2px solid #e4e4e4;
   border-radius: 10vmin;
   color: white;
+  font-size: 2.7vmin;
+}
+.Shipping input{
+  width: 95%;
+  padding: 3vmin 3vmin;
+  margin-top: 2.5vmin;
+  border: 2px solid #e4e4e4;
+  border-radius: 10vmin;
+  color: black;
   font-size: 2.7vmin;
 }
 .RegisterForm input {
@@ -570,12 +590,13 @@ padding: 8vmin;
 }
 .Login input:focus,
 .Login3 input:focus,
-.RegisterForm {
+.RegisterForm:focus,
+.Shipping:focus {
   outline: 0px;
 }
 .Login button,
 .Login2 button,
-.Login3 button  {
+.Login3 button{
   width: 40%;
   margin-top: 3vmin;
   padding: 20vmin 0;
@@ -586,6 +607,18 @@ padding: 8vmin;
   color: white;
   font-size: 2.7vmin;
 }
+.Shipping button{
+  width: 40%;
+  background-color: #EDA415;
+  margin-top: 3vmin;
+  padding: 1vmin 0;
+  border: 0;
+  border-radius: 10vmin;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.7vmin;
+ 
+}
 .RegisterForm button{
   width: 40%;
   margin-top: 3vmin;
@@ -595,11 +628,10 @@ padding: 8vmin;
   border-radius: 20vmin;
   text-transform: uppercase;
   color: white;
-  font-size: 2.7vmin;
 }
 .Login button a,
 .Login2 button a,
-.Login3 button a {
+.Login3 button a{
   text-transform: uppercase;
   color: white;
 }
@@ -889,6 +921,43 @@ padding: 8vmin;
   border: 1px solid #EDA415;
 }
 
+
+
+/* Our Team */
+
+.imageBack {
+  width: 50vmin;
+  height: 50vmin;
+  margin-bottom: 8vmin;
+  background-color: #D9F2F9;
+  border-radius: 10px;
+}
+
+.Overlay{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: whitesmoke;
+  opacity: 0;
+  /* backdrop-filter: blur(2px); */
+}
+
+.Overlay:hover{
+  opacity: 1;
+  transition: 1s;
+}
+
+.Overlay > * {
+  transform: translateY(100px);
+  transition: transform 0.25s;
+}
+
+.Overlay:hover >* {
+  transform: translateY(0);
+}
+=======
 /* TESTIMONIALS */
 
 .testimonials{
@@ -978,3 +1047,4 @@ left: 42%;
 }
 
 /* Contact Us Section END */
+

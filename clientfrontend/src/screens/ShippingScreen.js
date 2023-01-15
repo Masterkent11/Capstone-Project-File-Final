@@ -28,10 +28,10 @@ const ShippingScreen = ({ history }) => {
       <Header />
       <div className="container d-flex justify-content-center align-items-center login-center">
         <form
-          className="Login col-md-8 col-lg-4 col-11"
+          className="Shipping col-md-8 col-lg-4 col-11"
           onSubmit={submitHandler}
         >
-          <h6>DELIVERY ADDRESS</h6>
+          <h6 className="text-light" style={{fontSize:'3vmin'}}>DELIVERY ADDRESS</h6>
           <input
             type="text"
             placeholder="Enter address"
@@ -60,7 +60,7 @@ const ShippingScreen = ({ history }) => {
             required
             onChange={(e) => setCountry(e.target.value)}
           />
-          <button type="submit">Continue</button>
+          <button type="submit" style={{fontSize:"2.7vmin"}}>Continue</button>
         </form>
       </div>
       <ContactInfo />

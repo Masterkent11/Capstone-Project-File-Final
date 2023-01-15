@@ -41,6 +41,15 @@ const Header = () => {
               <p>(02) 8808-5901</p>
               <p>xplorear@gmail.com</p>
             </div>
+
+            <div className="social-header col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
+
+              <Link to="/ourteam" className="text-dark" style={{fontSize:"2.5vmin"}}>
+                Our Team
+              </Link>
+             
+            </div>
+
           </div>
         </div>
       </div>

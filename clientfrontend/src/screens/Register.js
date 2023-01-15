@@ -106,7 +106,7 @@ const Register = ({ location, history }) => {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <button type="submit">Register</button>
+          <button type="submit" style={{fontSize:"2.7vmin"}}>Register</button>
           <p>
             <Link to={redirect ? `/login?redirect=${redirect}` : "/login"}>
               I Have Account <strong>Login</strong>
