@@ -1,5 +1,6 @@
 import NessanImage from "../components/video/Img1.png";
 import lester from "../components/video/Img2.jpg"
+import Kurt from "../components/video/img3.jpg"
 import Header from "./../components/Header";
 import Footer from "../components/Footer";
 
@@ -56,7 +57,9 @@ const OurTeam = () => {
     const infoPerson2 = new Info(lester, "Lester De Silva", "Member", "https://www.facebook.com/lester.desilva/", "https://www.linkedin.com/in/lester-de-silva-260884200/", "https://lester-d-portfolio.netlify.app/")
     const content2 = infoPerson2.personInformation();
 
-    
+    const infoPerson3 = new Info(Kurt, "Kurt Angelo Agualada", "Member", "https://www.linkedin.com/in/kurt-angelo-agualada-879056233/", "https://kurtangeloagualada.netlify.app/")
+    const content3 = infoPerson3.personInformation();
+
 
 return (
     <>
@@ -74,7 +77,7 @@ return (
         <div className="row d-flex justify-content-evenly">
             {content}
             {content2}
-            {content}
+            {content3}
             {content}
             {content}
         </div>

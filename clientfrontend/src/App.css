@@ -190,7 +190,7 @@ textarea:focus {
   border: 1px solid #f3f3f3;
   border-radius: 10px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  height: 60vmin;
+  height: 65vmin;
   margin-left: 5vmin;
   box-shadow: 10px 10px 10px rgb(194, 194, 194);
 }
@@ -985,10 +985,6 @@ padding: 8vmin;
 .Overlay:hover >* {
   transform: translateY(0);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 50583cfceb6877be2ae887e0c7bc2e8a298d7f62
 /* TESTIMONIALS */
 
 .testimonials{
