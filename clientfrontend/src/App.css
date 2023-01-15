@@ -542,7 +542,7 @@ padding: 8vmin;
 }
 .Shipping{
   border-radius: 5px;
-  padding: 4vmin 4vmin 4vmin;
+  padding: 3vmin 3vmin 3vmin;
   background: #003F62;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
@@ -574,12 +574,12 @@ padding: 8vmin;
 }
 .Shipping input{
   width: 95%;
-  padding: 3vmin 3vmin;
+  padding: 1vmin 1vmin;
   margin-top: 2.5vmin;
   border: 2px solid #e4e4e4;
   border-radius: 10vmin;
   color: black;
-  font-size: 2.7vmin;
+  font-size: 1.7vmin;
 }
 .RegisterForm input {
   width: 90%;
@@ -644,8 +644,8 @@ padding: 8vmin;
   border-radius: 10vmin;
   text-transform: uppercase;
   color: white;
-  font-size: 2.7vmin;
- 
+  font-size: .7vmin;
+  width: 75%;
 }
 .RegisterForm button{
   width: 40%;
