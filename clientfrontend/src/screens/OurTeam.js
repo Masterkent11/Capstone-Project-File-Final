@@ -2,6 +2,7 @@ import NessanImage from "../components/video/Img1.png";
 import lester from "../components/video/Img2.jpg"
 import Kurt from "../components/video/img3.jpg"
 import Kent from "../components/video/img4.png"
+import Arci from "../components/video/img5.jpg"
 import Header from "./../components/Header";
 import Footer from "../components/Footer";
 
@@ -64,6 +65,9 @@ const OurTeam = () => {
     const infoPerson4 = new Info(Kent, "Kent Ashley Clementir", "Member", "https://www.facebook.com/profile.php?id=100079842521652", "https://www.linkedin.com/in/kent-ashley-clementir-776090217/", "https://kentash.vercel.app/")
     const content4 = infoPerson4.personInformation();
 
+    const infoPerson5 = new Info(Arci, "Arci Aljonel Afundar", "Member", "https://www.facebook.com/profile.php?id=100084277660721", "https://www.linkedin.com/in/arci-aljonel-afundar-3654b9216/?originalSubdomain=ph", "https://sensational-kelpie-b2ecdb.netlify.app/?fbclid=IwAR2smZQYDlHIflAPqYJdIB2vxwaqfv7MgSWdP_V129WV-aSatFTS2JMF-ak#Contact")
+    const content5 = infoPerson5.personInformation();
+
 
 return (
     <>
@@ -83,7 +87,7 @@ return (
             {content2}
             {content3}
             {content4}
-            {content}
+            {content5}
         </div>
     </div>
     <Footer/>

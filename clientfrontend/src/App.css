@@ -644,8 +644,7 @@ padding: 8vmin;
   border-radius: 10vmin;
   text-transform: uppercase;
   color: white;
-  font-size: .7vmin;
-  width: 75%;
+  width: 50%;
 }
 .RegisterForm button{
   width: 40%;

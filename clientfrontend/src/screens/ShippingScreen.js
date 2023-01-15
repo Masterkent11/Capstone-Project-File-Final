@@ -60,7 +60,7 @@ const ShippingScreen = ({ history }) => {
             required
             onChange={(e) => setCountry(e.target.value)}
           />
-          <button type="submit" style={{fontSize:"2.7vmin"}}>Continue</button>
+          <button type="submit" style={{fontSize:"2vmin"}}>Continue</button>
         </form>
       </div>
       <ContactInfo />
