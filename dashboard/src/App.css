@@ -925,3 +925,12 @@ ul.row-sm {
   line-height: 0.7;
   vertical-align: bottom;
 }
+.admin-logo{
+  font-size: 2rem;
+  font-weight: 700;
+  color:#29335d ;
+}
+.aside-top{
+  background-color:#ebf0fd;
+  
+}

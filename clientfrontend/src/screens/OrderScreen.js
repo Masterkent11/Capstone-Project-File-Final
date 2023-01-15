@@ -197,7 +197,7 @@ const OrderScreen = ({ match }) => {
                         </div>
                         <div className="mt-3 mt-md-0 col-md-2 col-6 align-items-end  d-flex flex-column justify-content-center ">
                           <h4>SUBTOTAL</h4>
-                          <h6>₱{item.price}</h6>
+                          <h6>{`₱ ${Intl.NumberFormat({ style: 'currency', currency: 'PHP' }).format(item.price)}`}</h6>
                         </div>
                       </div>
                     ))}
@@ -212,7 +212,7 @@ const OrderScreen = ({ match }) => {
                       <td>
                         <strong>Products</strong>
                       </td>
-                      <td>{`₱${order.itemsPrice}`}</td>
+                      <td>{`₱ ${Intl.NumberFormat({ style: 'currency', currency: 'PHP' }).format(order.itemsPrice)}`}</td>
                     </tr>
                     <tr>
                       <td>
@@ -230,7 +230,7 @@ const OrderScreen = ({ match }) => {
                       <td>
                         <strong>Total</strong>
                       </td>
-                      <td>₱{order.totalPrice}</td>
+                      <td>{`₱ ${Intl.NumberFormat({ style: 'currency', currency: 'PHP' }).format(order.totalPrice)}`}</td>
                     </tr>
                   </tbody>
                 </table>

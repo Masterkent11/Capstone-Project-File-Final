@@ -1,19 +1,21 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo1 from "./Logo-2.png"
 
 const Sidebar = () => {
   return (
     <div>
       <aside className="navbar-aside" id="offcanvas_aside">
-        <div className="aside-top">
+        <div className="aside-top alert-success">
           <Link to="/" className="brand-wrap">
             <img
-              src="/images/logo.png"
+              src={logo1}
               style={{ height: "46" }}
               className="logo"
               alt="Ecommerce dashboard template"
             />
           </Link>
+          <span className="admin-logo brand-wrap">ADMIN</span>
           <div>
             <button className="btn btn-icon btn-aside-minimize">
               <i className="text-muted fas fa-stream"></i>

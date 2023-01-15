@@ -44,7 +44,7 @@ const OurTeam = () => {
                         </div>
                     </div>
                 </div>
-             </>
+            </>
             );
         }
     }
