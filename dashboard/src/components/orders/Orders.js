@@ -26,10 +26,10 @@ const Orders = (props) => {
               <b>{order.user.name}</b>
             </td>
             <td>{order.user.email}</td>
-            <td>₱{order.totalPrice}</td>
+            <td>{`₱ ${Intl.NumberFormat({ style: 'currency', currency: 'PHP' }).format(order.totalPrice)}`}</td>
             <td>
               {order.isPaid ? (
-                <span className="badge rounded-pill alert-success">
+                <span className="badge rounded-pill alert-primary">
                   Paid At {moment(order.paidAt).format("MMM Do YY")}
                 </span>
               ) : (
@@ -41,13 +41,13 @@ const Orders = (props) => {
             <td>{moment(order.createdAt).format("MMM Do YY")}</td>
             <td>
               {order.isDelivered ? (
-                <span className="badge btn-success">Delivered</span>
+                <span className="badge badge2">Delivered</span>
               ) : (
-                <span className="badge btn-dark">Not delivered</span>
+                <span className="badge badge3">Not delivered</span>
               )}
             </td>
             <td className="d-flex justify-content-end align-item-center">
-              <Link to={`/order/${order._id}`} className="text-success">
+              <Link to={`/order/${order._id}`} className="badge4">
                 <i className="fas fa-eye"></i>
               </Link>
             </td>

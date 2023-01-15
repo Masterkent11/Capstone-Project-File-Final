@@ -32,7 +32,7 @@ const OrderDetailmain = (props) => {
   return (
     <section className="content-main">
       <div className="content-header">
-        <Link to="/orders" className="btn btn-dark text-white">
+        <Link to="/orders" className="btn badge3 text-white">
           Back To Orders
         </Link>
       </div>
@@ -68,7 +68,7 @@ const OrderDetailmain = (props) => {
                   <option>Shipped</option>
                   <option>Delivered</option>
                 </select>
-                <Link className="btn btn-success ms-2" to="#">
+                <Link className="btn badge2 ms-2" to="#">
                   <i className="fas fa-print"></i>
                 </Link>
               </div>
@@ -88,7 +88,7 @@ const OrderDetailmain = (props) => {
               <div className="col-lg-3">
                 <div className="box shadow-sm bg-light">
                   {order.isDelivered ? (
-                    <button className="btn btn-success col-12">
+                    <button className="btn badge3 text-white col-12">
                       DELIVERED AT ({" "}
                       {moment(order.isDeliveredAt).format("MMM Do YY")})
                     </button>

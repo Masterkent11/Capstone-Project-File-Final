@@ -90,7 +90,7 @@ const Login = ({ location, history }) => {
             onSuccess={onSuccess}
             onFailure={onFailure}/> */}
         </form>
-       
+
       </div>
 
       {/* Position relative */}
@@ -139,7 +139,6 @@ const Login = ({ location, history }) => {
             onSuccess={onSuccess}
             onFailure={onFailure}/> */}
         </form>
-       
       </div>
       
 

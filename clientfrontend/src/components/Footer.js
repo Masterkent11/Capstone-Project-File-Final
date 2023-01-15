@@ -1,9 +1,11 @@
 import React from "react";
 import Logo from './video/Logo.png'
+import {Link} from "react-router-dom"
 
 
 export function FooterTop() {
   return(
+
     <div className="text-center" style={{backgroundColor:"#003F62", padding:"3vmin"}}>
       <img  style={{width:'25vmin'}} src={Logo} alt='aa'/>
       <p className="d-flex justify-content-center gap-1 text-light" style={{fontSize:"2.5vmin"}}>
@@ -12,6 +14,9 @@ export function FooterTop() {
       </p>
       
     </div>
+    
+
+
   )
 }
 

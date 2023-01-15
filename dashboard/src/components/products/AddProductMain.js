@@ -16,10 +16,10 @@ const ToastObjects = {
 };
 const AddProductMain = () => {
   const [name, setName] = useState("");
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState(Intl.NumberFormat({ style: 'currency', currency: 'EUR' }).format(0));
   const [image, setImage] = useState("");
   const [countInStock, setCountInStock] = useState(0);
-  const [countSize, setCountSize] = useState(0);
+  const [countSize, setCountSize] = useState("");
   const [description, setDescription] = useState("");
 
   const dispatch = useDispatch();
