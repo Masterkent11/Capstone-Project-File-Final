@@ -1,6 +1,7 @@
 {
   "name": "xplorear",
   "version": "0.1.0",
+  "proxy": "http://localhost:1000",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
