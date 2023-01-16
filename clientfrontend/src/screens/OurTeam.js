@@ -53,19 +53,19 @@ const OurTeam = () => {
         }
     }
 
-    const infoPerson = new Info(NessanImage, "Nessan Joe V. Ipulan", "Member", "https://www.facebook.com/Kneesuns", "https://www.linkedin.com/in/nessan-joe-ipulan-b8b160173/", "https://brilliant-beignet-18498e.netlify.app/")
+    const infoPerson = new Info(NessanImage, "Nessan Joe V. Ipulan", "Front-end developer", "https://www.facebook.com/Kneesuns", "https://www.linkedin.com/in/nessan-joe-ipulan-b8b160173/", "https://brilliant-beignet-18498e.netlify.app/")
     const content = infoPerson.personInformation();
 
-    const infoPerson2 = new Info(lester, "Lester De Silva", "Member", "https://www.facebook.com/lester.desilva/", "https://www.linkedin.com/in/lester-de-silva-260884200/", "https://lester-d-portfolio.netlify.app/")
+    const infoPerson2 = new Info(lester, "Lester De Silva", "Front-end developer", "https://www.facebook.com/lester.desilva/", "https://www.linkedin.com/in/lester-de-silva-260884200/", "https://lester-d-portfolio.netlify.app/")
     const content2 = infoPerson2.personInformation();
 
-    const infoPerson3 = new Info(Kurt, "Kurt Angelo Agualada", "Member","https://www.facebook.com/kurtangelo.agualada", "https://www.linkedin.com/in/kurt-angelo-agualada-879056233/", "https://kurtangeloagualada.netlify.app/")
+    const infoPerson3 = new Info(Kurt, "Kurt Angelo Agualada", "Back-end developer","https://www.facebook.com/kurtangelo.agualada", "https://www.linkedin.com/in/kurt-angelo-agualada-879056233/", "https://kurtangeloagualada.netlify.app/")
     const content3 = infoPerson3.personInformation();
 
-    const infoPerson4 = new Info(Kent, "Kent Ashley Clementir", "Member", "https://www.facebook.com/profile.php?id=100079842521652", "https://www.linkedin.com/in/kent-ashley-clementir-776090217/", "https://kentash.vercel.app/")
+    const infoPerson4 = new Info(Kent, "Kent Ashley Clementir", "Back-end developer", "https://www.facebook.com/profile.php?id=100079842521652", "https://www.linkedin.com/in/kent-ashley-clementir-776090217/", "https://kentash.vercel.app/")
     const content4 = infoPerson4.personInformation();
 
-    const infoPerson5 = new Info(Arci, "Arci Aljonel Afundar", "Member", "https://www.facebook.com/profile.php?id=100084277660721", "https://www.linkedin.com/in/arci-aljonel-afundar-3654b9216/?originalSubdomain=ph", "https://sensational-kelpie-b2ecdb.netlify.app/?fbclid=IwAR2smZQYDlHIflAPqYJdIB2vxwaqfv7MgSWdP_V129WV-aSatFTS2JMF-ak#Contact")
+    const infoPerson5 = new Info(Arci, "Arci Aljonel Afundar", "Support", "https://www.facebook.com/profile.php?id=100084277660721", "https://www.linkedin.com/in/arci-aljonel-afundar-3654b9216/?originalSubdomain=ph", "https://sensational-kelpie-b2ecdb.netlify.app/?fbclid=IwAR2smZQYDlHIflAPqYJdIB2vxwaqfv7MgSWdP_V129WV-aSatFTS2JMF-ak#Contact")
     const content5 = infoPerson5.personInformation();
 
 
