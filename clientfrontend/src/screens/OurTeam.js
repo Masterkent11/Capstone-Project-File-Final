@@ -65,7 +65,7 @@ const OurTeam = () => {
     const infoPerson4 = new Info(Kent, "Kent Ashley Clementir", "Back-end developer", "https://www.facebook.com/profile.php?id=100079842521652", "https://www.linkedin.com/in/kent-ashley-clementir-776090217/", "https://kentash.vercel.app/")
     const content4 = infoPerson4.personInformation();
 
-    const infoPerson5 = new Info(Arci, "Arci Aljonel Afundar", "Support", "https://www.facebook.com/profile.php?id=100084277660721", "https://www.linkedin.com/in/arci-aljonel-afundar-3654b9216/?originalSubdomain=ph", "https://sensational-kelpie-b2ecdb.netlify.app/?fbclid=IwAR2smZQYDlHIflAPqYJdIB2vxwaqfv7MgSWdP_V129WV-aSatFTS2JMF-ak#Contact")
+    const infoPerson5 = new Info(Arci, "Arci Aljonel Afundar", "Back-end developer", "https://www.facebook.com/profile.php?id=100084277660721", "https://www.linkedin.com/in/arci-aljonel-afundar-3654b9216/?originalSubdomain=ph", "https://sensational-kelpie-b2ecdb.netlify.app/?fbclid=IwAR2smZQYDlHIflAPqYJdIB2vxwaqfv7MgSWdP_V129WV-aSatFTS2JMF-ak#Contact")
     const content5 = infoPerson5.personInformation();
 
 
