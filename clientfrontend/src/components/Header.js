@@ -193,12 +193,13 @@ const Header = () => {
                         LOGOUT
                       </Link>
 
-                      <Link
+                      <a
                         className="dropdown-item"
-                        to="#"
+                        href="https://adminxplorear.vercel.app/"
+                        target="_#"
                       >
                         DASHBOARD
-                      </Link>
+                      </a>
                       
                     </div>
                   </div>
