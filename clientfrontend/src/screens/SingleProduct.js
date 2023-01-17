@@ -77,7 +77,7 @@ const SingleProduct = ({ history, match }) => {
                   <div className="product-info">
                     <div className="product-name">{product.name}</div>
                   </div>
-                  <p>{product.description}</p>
+                  <p style={{fontSize: '2.7vmin', lineHeight: '1.4', textAlign:"justify", fontWeight: '100'}}>{product.description}</p>
 
                   <div className="product-count col-lg-7 ">
                     <div className="flex-box d-flex justify-content-between align-items-center">

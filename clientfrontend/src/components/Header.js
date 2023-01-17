@@ -193,20 +193,20 @@ const Header = () => {
                         LOGOUT
                       </Link>
 
-                      {/* <Link
+                      <Link
                         className="dropdown-item"
                         to="#"
                       >
-                        DASHBOARD (Admin Only)
-                      </Link> */}
+                        DASHBOARD
+                      </Link>
                       
                     </div>
                   </div>
                 ) : (
                   <>
-                    <Link to="/register">REGISTER</Link>
-                    <Link to="/login">LOGIN</Link>
-                    <Link to="/login">DASHBOARD</Link>
+                    <Link to="/register" className="small">REGISTER</Link>
+                    <Link to="/login" className="small">LOGIN</Link>
+                    {/* <Link to="/login" target="_blank" className="small">DASHBOARD</Link> */}
                   </>
                 )}
 
