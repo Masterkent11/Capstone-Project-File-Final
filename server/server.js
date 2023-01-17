@@ -6,13 +6,14 @@ import productRoute from "./Routes/ProductRoutes.js";
 import { errorHandler, notFound } from "./Middleware/Errors.js";
 import userRouter from "./Routes/UserRoutes.js";
 import orderRouter from "./Routes/orderRoutes.js";
+import cors from "cors";
 
 
 dotenv.config();
 connectDatabase();
 const app = express();
 app.use(express.json());
-// const cors = require('cors');
+app.use(cors());
 
 // API
 app.use("/api/import", ImportData);
@@ -23,23 +24,6 @@ app.get("/api/config/paypal", (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID);
 });
 
-// app.use(cookieSession(
-//   {
-//     name: "session",
-//     keys: ["lama"],
-//     maxAge: 24*60*60*100,
-
-//   }
-// ));
-
-// app.use(passport.initialize());
-// app.use(passport.session());
-
-// app.use(cors({
-//   origin:"http://localhost:3001",
-//   method: "GET, POST, PUT, DELETE",
-//   creditials: true
-// }))
 
 // ERROR HANDLER
 app.use(notFound);
