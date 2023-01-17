@@ -65,6 +65,7 @@ const ProfileTabs = () => {
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
+              style={{fontSize:"2.7vmin"}}
             />
           </div>
         </div>
@@ -78,6 +79,7 @@ const ProfileTabs = () => {
               value={email}
               required
               onChange={(e) => setEmail(e.target.value)}
+              style={{fontSize:"2.7vmin"}}
             />
           </div>
         </div>
@@ -89,6 +91,7 @@ const ProfileTabs = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              style={{fontSize:"2.7vmin"}}
             />
           </div>
         </div>
@@ -100,6 +103,7 @@ const ProfileTabs = () => {
               type="password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
+              style={{fontSize:"2.7vmin"}}
             />
           </div>
         </div>

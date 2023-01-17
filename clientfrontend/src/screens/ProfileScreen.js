@@ -37,10 +37,10 @@ const ProfileScreen = () => {
                   <img src="./images/user.png" alt="userprofileimage" />
                 </div>
                 <div className="author-card-details col-md-7">
-                  <h5 className="author-card-name mb-2">
+                  <p className="author-card-name mb-2" style={{fontSize:"3.8vmin"}}>
                     <strong>{userInfo.name}</strong>
-                  </h5>
-                  <span className="author-card-position">
+                  </p>
+                  <span className="author-card-position"  style={{fontSize:"2.9vmin"}}>
                     <>Joined {moment(userInfo.createdAt).format("LL")}</>
                   </span>
                 </div>
@@ -63,6 +63,7 @@ const ProfileScreen = () => {
                     role="tab"
                     aria-controls="v-pills-home"
                     aria-selected="true"
+                    style={{fontSize: '2.7vmin'}}
                   >
                     Profile Settings
                   </button>
@@ -75,9 +76,10 @@ const ProfileScreen = () => {
                     role="tab"
                     aria-controls="v-pills-profile"
                     aria-selected="false"
+                    style={{fontSize: "2.7vmin"}}
                   >
                     Orders List
-                    <span className="badge2">{orders ? orders.length : 0}</span>
+                    <span className="badge2" style={{padding: '2.4vmin'}}>{orders ? orders.length : 0}</span>
                   </button>
                 </div>
               </div>

@@ -82,6 +82,13 @@ const Header = () => {
                           PROFILE
                         </Link>
 
+                        <a
+                          className="dropdown-item"
+                          href="https://adminxplorear.netlify.app/"
+                        >
+                          DASHBOARD
+                        </a>
+
                         <Link
                           className="dropdown-item"
                           to="#"
@@ -90,12 +97,7 @@ const Header = () => {
                           LOGOUT
                         </Link>
 
-                        {/* <Link
-                          className="dropdown-item"
-                          to="#"
-                        >
-                          DASHBOARD
-                        </Link> */}
+                     
                       </div>
                     </div>
                   ) : (
@@ -185,6 +187,14 @@ const Header = () => {
                         PROFILE
                       </Link>
 
+                      <a
+                        className="dropdown-item"
+                        href="https://adminxplorear.vercel.app/"
+                        target="_#"
+                      >
+                        DASHBOARD
+                      </a>
+
                       <Link
                         className="dropdown-item"
                         to="#"
@@ -193,13 +203,6 @@ const Header = () => {
                         LOGOUT
                       </Link>
 
-                      <a
-                        className="dropdown-item"
-                        href="https://adminxplorear.vercel.app/"
-                        target="_#"
-                      >
-                        DASHBOARD
-                      </a>
                       
                     </div>
                   </div>
