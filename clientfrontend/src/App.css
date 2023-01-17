@@ -305,6 +305,15 @@ textarea:focus {
   text-align: center;
   
 }
+
+@media ( width <= 600px) {
+
+  #video_overlay{
+    background: none !important;;
+  }
+}
+
+
 #call__to__action{
   color: whitesmoke;
 }
