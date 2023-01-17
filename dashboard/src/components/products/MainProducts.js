@@ -24,7 +24,7 @@ const MainProducts = () => {
       <div className="content-header">
         <h2 className="content-title">Products</h2>
         <div>
-          <Link to="/addproduct" className="btn btn-primary">
+          <Link to="/addproduct" className="btn badge3"style={{color: "white"}}>
             Create new
           </Link>
         </div>

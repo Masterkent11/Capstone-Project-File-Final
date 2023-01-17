@@ -65,7 +65,7 @@ const PlaceOrderScreen = ({ history }) => {
             <div className="row ">
               <div className="col-md-4 center">
                 <div className="alert-success order-box">
-                  <i class="fas fa-user"></i>
+                  <i class="fas fa-user" style={{color: "#EDA415"}}></i>
                 </div>
               </div>
               <div className="col-md-8 center">
@@ -82,7 +82,7 @@ const PlaceOrderScreen = ({ history }) => {
             <div className="row">
               <div className="col-md-4 center">
                 <div className="alert-success order-box">
-                  <i className="fas fa-truck-moving"></i>
+                  <i className="fas fa-truck-moving" style={{color: "#EDA415"}}></i>
                 </div>
               </div>
               <div className="col-md-8 center">
@@ -99,7 +99,7 @@ const PlaceOrderScreen = ({ history }) => {
             <div className="row">
               <div className="col-md-4 center">
                 <div className="alert-success order-box">
-                  <i className="fas fa-map-marker-alt"></i>
+                  <i className="fas fa-map-marker-alt" style={{color: "#EDA415"}}></i>
                 </div>
               </div>
               <div className="col-md-8 center">

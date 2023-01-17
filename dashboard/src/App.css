@@ -31,7 +31,7 @@ a.disabled {
   border: 1px solid #EDA415 !important;
 }
 .Header-green {
-  background-color: #EDA415;
+  background-color: #003F62;
 }
 /* .screen-overlay {
   width: 0%;
@@ -516,7 +516,7 @@ a.itemside:hover .title {
 
 }
 .badge2{
-  background-color: #EDA415; ;
+  background-color: #003F62; ;
 }
 .badge3{
   background-color: #003F62;

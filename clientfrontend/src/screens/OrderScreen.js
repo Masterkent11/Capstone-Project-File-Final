@@ -93,7 +93,7 @@ const OrderScreen = ({ match }) => {
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="alert-success order-box">
-                      <i className="fas fa-user"></i>
+                      <i className="fas fa-user" style={{color: "#EDA415"}}></i>
                     </div>
                   </div>
                   <div className="col-md-8 center">
@@ -114,7 +114,7 @@ const OrderScreen = ({ match }) => {
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="alert-success order-box">
-                      <i className="fas fa-truck-moving"></i>
+                      <i className="fas fa-truck-moving" style={{color: "#EDA415"}}></i>
                     </div>
                   </div>
                   <div className="col-md-8 center">
@@ -144,7 +144,7 @@ const OrderScreen = ({ match }) => {
                 <div className="row">
                   <div className="col-md-4 center">
                     <div className="alert-success order-box">
-                      <i className="fas fa-map-marker-alt"></i>
+                      <i className="fas fa-map-marker-alt" style={{color: "#EDA415"}}></i>
                     </div>
                   </div>
                   <div className="col-md-8 center">
@@ -163,7 +163,7 @@ const OrderScreen = ({ match }) => {
                         </p>
                       </div>
                     ) : (
-                      <div className="not-paid p-2 col-12">
+                      <div className="not-paid2 p-2 col-12">
                         <p className="text-white text-center text-sm-start">
                           Not Delivered
                         </p>

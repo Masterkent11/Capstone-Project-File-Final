@@ -47,7 +47,7 @@ const Header = () => {
               <Link to="/ourteam" className="text-dark" style={{fontSize:"2.5vmin"}}>
                 Our Team
               </Link>
-             
+
             </div>
 
           </div>
@@ -79,7 +79,7 @@ const Header = () => {
                       </button>
                       <div className="dropdown-menu">
                         <Link className="dropdown-item" to="/profile">
-                          Profile
+                          PROFILE
                         </Link>
 
                         <Link
@@ -87,8 +87,15 @@ const Header = () => {
                           to="#"
                           onClick={logoutHandler}
                         >
-                          Logout
+                          LOGOUT
                         </Link>
+
+                        {/* <Link
+                          className="dropdown-item"
+                          to="#"
+                        >
+                          DASHBOARD
+                        </Link> */}
                       </div>
                     </div>
                   ) : (
@@ -104,12 +111,16 @@ const Header = () => {
                       </button>
                       <div className="dropdown-menu">
                         <Link className="dropdown-item" to="/login">
-                          Login
+                          LOGIN
                         </Link>
 
                         <Link className="dropdown-item" to="/register">
-                          Register
+                          REGISTER
                         </Link>
+
+                        {/* <Link className="dropdown-item" to="/">
+                          DASHBOARD
+                        </Link> */}
                       </div>
                     </div>
                   )}
@@ -171,7 +182,7 @@ const Header = () => {
                     </button>
                     <div className="dropdown-menu">
                       <Link className="dropdown-item" to="/profile">
-                        Profile
+                        PROFILE
                       </Link>
 
                       <Link
@@ -179,14 +190,23 @@ const Header = () => {
                         to="#"
                         onClick={logoutHandler}
                       >
-                        Logout
+                        LOGOUT
                       </Link>
+
+                      {/* <Link
+                        className="dropdown-item"
+                        to="#"
+                      >
+                        DASHBOARD (Admin Only)
+                      </Link> */}
+                      
                     </div>
                   </div>
                 ) : (
                   <>
-                    <Link to="/register">Register</Link>
-                    <Link to="/login">Login</Link>
+                    <Link to="/register">REGISTER</Link>
+                    <Link to="/login">LOGIN</Link>
+                    <Link to="/login">DASHBOARD</Link>
                   </>
                 )}
 

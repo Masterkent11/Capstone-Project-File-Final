@@ -98,7 +98,6 @@ textarea:focus {
 
 }
 .Login-Register a {
-  text-transform: uppercase;
   font-size: 15px;
   margin-right: 2rem;
   position: relative;
@@ -372,7 +371,7 @@ textarea:focus {
   
 }
 .product-name {
-  font-size: 25px;
+  font-size: 3vmin;
   font-weight: 600;
   line-height: 22px;
   margin-bottom: 30px;
@@ -385,8 +384,10 @@ textarea:focus {
   width: 100%;
 }
 .product-dtl p {
-  line-height: 24px;
+  line-height: 20px;
   color: #7a7a7a;
+  font-size: 2vmin;
+
 }
 .product-count {
   border: 2px solid #f3f3f3;
@@ -891,8 +892,16 @@ padding: 8vmin;
 }
 
 .not-paid{
-  background-color: #EDA415;
+  background-color: rgba(255, 0, 0, 0.5);
   border-radius: 1rem;
+  width: 38%;
+  
+}
+.not-paid2{
+  background-color: #00406294;
+  border-radius: 1rem;
+  width: 56%;
+  
 }
 .order-detail {
   padding: 30px 0;

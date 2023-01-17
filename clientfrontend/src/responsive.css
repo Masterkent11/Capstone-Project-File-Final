@@ -191,3 +191,18 @@
 }
 
 /* Testi End */
+
+/* SINGLE PRODUCT */
+
+
+@media screen and (max-width: 600px) {
+  .product-dtl p{
+    font-size: 3vmin;
+  }
+  .product-name{
+    font-size: 4vmin;
+    margin-bottom: 1rem;
+  }
+}
+
+/* SINGLE PRODUCT END */

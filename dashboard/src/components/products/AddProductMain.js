@@ -51,12 +51,12 @@ const AddProductMain = () => {
       <section className="content-main" style={{ maxWidth: "1200px" }}>
         <form onSubmit={submitHandler}>
           <div className="content-header">
-            <Link to="/products" className="btn badge2 text-white">
+            <Link to="/products" className="btn badge3 text-white">
               Go to products
             </Link>
             <h2 className="content-title">Add product</h2>
             <div>
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn badge3 " style={{color: "white"}}>
                 Publish now
               </button>
             </div>

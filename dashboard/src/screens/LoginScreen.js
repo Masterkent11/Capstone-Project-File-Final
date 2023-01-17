@@ -4,6 +4,7 @@ import Loading from "../components/LoadingError/Loading";
 import Toast from "../components/LoadingError/Toast";
 import { login } from "../Redux/Actions/userActions";
 import Message from "./../components/LoadingError/Error";
+import Logo from './../components/Logo-2.png'
 
 const Login = ({ history }) => {
   window.scrollTo(0, 0);
@@ -28,14 +29,18 @@ const Login = ({ history }) => {
   return (
     <>
       <Toast />
+      <div className="text-center" style={{backgroundColor:"#003F62" , width:"100%", padding:".5rem"}}>
+        <img style={{width:'20vmin'}} src={Logo} alt='/'/>
+      </div>
+
       <div
         className="card shadow mx-auto"
-        style={{ maxWidth: "380px", marginTop: "100px" }}
+        style={{ maxWidth: "380px", marginTop: "3rem" }}
       >
         <div className="card-body">
           {error && <Message variant="alert-danger">{error}</Message>}
           {loading && <Loading />}
-          <h4 className="card-title mb-4 text-center">Sign in</h4>
+          <h4 className="card-title mb-4 text-center fw-bold">Admin Only</h4>
           <form onSubmit={submitHandler}>
             <div className="mb-3">
               <input

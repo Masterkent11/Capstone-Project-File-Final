@@ -47,7 +47,7 @@ const OrderDetailmain = (props) => {
             <div className="row align-items-center ">
               <div className="col-lg-6 col-md-6">
                 <span>
-                  <i className="far fa-calendar-alt mx-2"></i>
+                  <i className="far fa-calendar-alt mx-2" style={{color: "white"}}></i>
                   <b className="text-white">
                     {moment(order.createdAt).format("llll")}
                   </b>
@@ -69,7 +69,7 @@ const OrderDetailmain = (props) => {
                   <option>Delivered</option>
                 </select>
                 <Link className="btn badge2 ms-2" to="#">
-                  <i className="fas fa-print"></i>
+                  <i className="fas fa-print" style={{color: "white"}}></i>
                 </Link>
               </div>
             </div>
@@ -97,7 +97,7 @@ const OrderDetailmain = (props) => {
                       {loadingDelivered && <Loading />}
                       <button
                         onClick={deliverHandler}
-                        className="btn btn-dark col-12"
+                        className="btn badge3 col-12" style={{color: "white"}}
                       >
                         MARK AS DELIVERED
                       </button>
