@@ -3,6 +3,7 @@ import lester from "../components/video/Img2.jpg"
 import Kurt from "../components/video/img3.jpg"
 import Kent from "../components/video/img4.png"
 import Arci from "../components/video/img5.jpg"
+import Derwin from "../components/video/img6.jpg"
 import Header from "./../components/Header";
 import Footer from "../components/Footer";
 
@@ -22,7 +23,7 @@ const OurTeam = () => {
         personInformation() {
             return(
                 <>
-                <div className="col-4 text-center position-relative imageBack">
+                <div className="col-6 text-center position-relative imageBack ">
                     <img className="w-100" src={this.imageProfile} alt=""/>
                     <div className="position-absolute Overlay d-flex justify-content-center flex-column">
                         <p style={{fontSize:"2.7vmin"}}>{this.personName}</p>
@@ -68,6 +69,9 @@ const OurTeam = () => {
     const infoPerson5 = new Info(Arci, "Arci Aljonel Afundar", "Back-end developer", "https://www.facebook.com/profile.php?id=100084277660721", "https://www.linkedin.com/in/arci-aljonel-afundar-3654b9216/?originalSubdomain=ph", "https://sensational-kelpie-b2ecdb.netlify.app/?fbclid=IwAR2smZQYDlHIflAPqYJdIB2vxwaqfv7MgSWdP_V129WV-aSatFTS2JMF-ak#Contact")
     const content5 = infoPerson5.personInformation();
 
+    const infoPerson6 = new Info(Derwin, "Derwin Bernales", "Frontend developer", "https://www.facebook.com/mirana.nightshade.3133", "https://www.linkedin.com/in/derwin-bernales-321626203/?fbclid=IwAR213oDBS4xF5qwaoJuEXnALkfewWD5InqA0sNkSdQpO1Y1DbiGZQAQUFUE", "https://dreamy-snickerdoodle-9965ad.netlify.app/?fbclid=IwAR3lGIEhR4J8vCgJIqo6tQCuxQnjA9sbCgvGcV2Xb-8FdEqrv7OFLgOdXE8")
+    const content6 = infoPerson6.personInformation();
+
 
 return (
     <>
@@ -88,6 +92,7 @@ return (
             {content3}
             {content4}
             {content5}
+            {content6}
         </div>
     </div>
     <Footer/>
